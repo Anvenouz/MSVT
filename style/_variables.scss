@@ -1,0 +1,30 @@
+$nav-height: 75px;
+
+//font color
+$main-color-green : rgb(0, 110, 0);
+$main-color-white : rgb(242, 244, 242);
+$main-color-font :rgb(41, 41, 41);
+
+//Box-shadow
+$nav-box-shadow : 0 5px 11px -10px rgb(0, 0, 0);
+$block-box-shadow-inset : 0px 0px 15px 5px rgba(0, 0, 0, .1);
+
+//Border
+$border-radius-low : 3px;
+$border-radius-middle :10px;
+$border-radius-strong :80px;
+$border-green : 1px solid $main-color-green;
+$border-grey :1px solid rgba(0, 0, 0, .2);
+
+//Background
+$background-button: linear-gradient(to bottom, rgba(15, 83, 0, .9) 5%, rgba(23, 128, 0, .9) 100%);
+$background-button-hover :linear-gradient(to top, rgba(20, 109, 0, .9) 100%, rgba(32, 168, 2, 0.9) 50%);
+$background-white : rgb(255, 255, 255);
+$background-grey : rgb(248, 248, 248);
+$background-button-filter: rgb(221, 221, 221);
+$background-linear : linear-gradient(to bottom, rgba(248, 248, 248, 1) 0%, rgba(248, 248, 248, .05) 55%, rgba(248, 248, 248, .9) 100%);
+$bg-disabled : rgba(220, 220, 220, .2);
+
+//Font Size
+$font-17 : 18px;
+$font-14 : 14px;

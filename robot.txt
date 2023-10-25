@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /form_confirmation.php
+Disallow: /form_echec.php
+Disallow: /form_echec_contact.php
