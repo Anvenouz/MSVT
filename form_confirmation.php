@@ -11,7 +11,7 @@
             <p class="mb25">
                 Nous traitons actuellement votre demande et nous reviendrons vers vous dans les plus brefs délais pour confirmer votre réservation et vous transmettre les modalités de paiement.
             </p>
-            <button type="button" class="button-main mt20 reveal-4" onclick="window.location.href='index'">Retour à la page d'accueil</button>
+            <a type="button" class="button-main mt20 reveal-4" href="/">Retour à la page d'accueil</a>
         </div>
     </div>
 </section>

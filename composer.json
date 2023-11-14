@@ -1,0 +1,13 @@
+{
+    "name": "root/msvt",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "MSVT\\": "src/"
+        },
+        "classmap": [
+            "MSVT/"
+        ]
+    },
+    "require": {}
+}
