@@ -2,7 +2,7 @@
 
 class Path {
 
-  const ROOT_PATH = "MSVT";
+  const ROOT_PATH = "";
 
   const PUBLIC_PATH = "";
 
@@ -13,15 +13,19 @@ class Path {
     if (strpos(self::PUBLIC_PATH, 'http') === FALSE) {
       $publicPath = "";
     }
-    return '/' . $publicPath . trim(self::ROOT_PATH, '/'). '/assets';
+    $path = trim($publicPath . self::ROOT_PATH, '/');
+    return $path. '/assets/';
   }
 
   static public function getFile($uri): string {
-    return Path::getAssetPath() . '/' . trim($uri, '/');
+    return Path::getAssetPath() . trim($uri, '/');
   }
 
 
   static public function getUrl($uri): string {
+    if (empty(self::ROOT_PATH)) {
+      return '/' . trim($uri, '/');
+    }
     return "/" . trim(self::ROOT_PATH, '/') . '/' . trim($uri, '/');
   }
 
