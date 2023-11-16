@@ -2,7 +2,7 @@
 
 class Path {
 
-  const ROOT_PATH = "";
+  const ROOT_PATH = "SiteMSVT_git";
 
   const PUBLIC_PATH = "";
 
@@ -13,7 +13,11 @@ class Path {
     if (strpos(self::PUBLIC_PATH, 'http') === FALSE) {
       $publicPath = "";
     }
+
     $path = trim($publicPath . self::ROOT_PATH, '/');
+    if(!empty($path)) {
+      $path = '/' .$path;
+    }
     return $path. '/assets/';
   }
 

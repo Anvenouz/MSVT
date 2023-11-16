@@ -8,7 +8,10 @@ class Router {
   protected $routes = [];
 
   public function addRoute($route, $controller, $action) {
-    $route = trim(\Path::ROOT_PATH, '/') . $route;
+    if(!empty(\Path::ROOT_PATH)) {
+      $route = '/' . trim(\Path::ROOT_PATH, '/') . $route;
+    }
+
     $this->routes[$route] = ['controller' => $controller, 'action' => $action];
   }
 
