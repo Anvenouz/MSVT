@@ -1,7 +1,7 @@
 <section class="section-75">
     <div class="block-flex reveal">
         <div class="frame-effect-lt hidden-resp reveal-1">
-            <img src="/assets/img/img_historique/batiment.jpg" class="historique-img" alt="img batiment">
+            <img src="<?= Path::getFile("/img/img_historique/batiment.jpg"); ?>" class="historique-img" alt="img batiment">
         </div>
         <div class="mr90">
             <h1 class="block-title mb-25-resp center reveal-2"><span>Notre ASBL</span>Ses engagements et objectifs</h1>
@@ -30,7 +30,7 @@
             </p>
         </div>
         <div class="block-flex-img frame-effect-rt reveal-1">
-            <img src="/assets/img/img_historique/histo1.jpg" class="historique-img hidden-resp" alt="img histoire">
+            <img src="<?= Path::getFile("/img/img_historique/histo1.jpg"); ?>" class="historique-img hidden-resp" alt="img histoire">
         </div>
     </div>
 </section>
@@ -42,7 +42,7 @@
 <section class="section-75">
     <div class="block-flex reveal">
         <div class="frame-effect-lt reveal-1">
-            <img src="/assets/img/img_historique/histo2.jpg" class="historique-img hidden-resp" alt="img evolution">
+            <img src="<?= Path::getFile("/img/img_historique/histo2.jpg"); ?>" class="historique-img hidden-resp" alt="img evolution">
         </div>
         <div class="mr90">
             <h1 class="block-title mb-25-resp center reveal-2"><span>Notre ASBL</span>Ses projets et son évolution</h1>

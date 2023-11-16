@@ -4,7 +4,6 @@ namespace MSVT;
 use MSVT\Controllers\AboutController;
 use MSVT\Controllers\ActivitiesServicesController;
 use MSVT\Controllers\ReservationController;
-use MSVT\Router;
 use MSVT\Controllers\HomeController;
 
 $router = new Router();

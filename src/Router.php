@@ -2,11 +2,14 @@
 
 namespace MSVT;
 
+include_once "Helper/Path.php";
+
 class Router {
   protected $routes = [];
 
   public function addRoute($route, $controller, $action) {
-      $this->routes[$route] = ['controller' => $controller, 'action' => $action];
+    $route = '/' . trim(\Path::ROOT_PATH, '/') . $route;
+    $this->routes[$route] = ['controller' => $controller, 'action' => $action];
   }
 
   /**

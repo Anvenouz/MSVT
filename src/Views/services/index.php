@@ -7,11 +7,11 @@
                 <div class="carousel slide carousel-fade carousel-max_sup" id="carousel-activities" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img class="d-block w-100" src="/assets/img/img_scolaire/carousel/slide1.jpg" alt="slide 1">
+                            <img class="d-block w-100" src="<?= Path::getFile("/img/img_scolaire/carousel/slide1.jpg"); ?>" alt="slide 1">
                         </div>
                         <?php for ($i = 2; $i < 4; $i++) { ?>
                             <div class="carousel-item">
-                                <img class="d-block w-100" src="/assets/img/img_scolaire/carousel/slide<?php echo $i; ?>.jpg" alt="slide <?php echo $i; ?>">
+                                <img class="d-block w-100" src="<?= Path::getFile("/img/img_scolaire/carousel/slide$i.jpg"); ?>" alt="slide <?php echo $i; ?>">
                             </div>
                         <?php } ?>
                     </div>
@@ -30,12 +30,12 @@
                     Nous vous proposons des activités <span class="strong">à la carte</span> mais également des formules <span class="strong">d'une demi-journée</span> (3h).
                 </p>
                 <p>
-                    N'hésitez pas à nous <a href="/contact" target="_blank">contacter</a> pour plus d'informations ou pour planifier une visite.
+                    N'hésitez pas à nous <a href="<?= Path::getUrl("/contact"); ?>" target="_blank">contacter</a> pour plus d'informations ou pour planifier une visite.
                 </p>
                 <div class="button-activity-100">
                     <button type="button" class="button-main reveal-4" data-toggle="modal" data-target="#ModalTarif">Formules et tarifs</button>
                     <button type="button" class="button-secondary reveal-4" id="button-programme-scolaire" onclick="scrollToProgramme()">Programme 2023-2024</button>
-                    <a href="/reservation" class="button-secondary reveal-4">Réserver</a>
+                    <a href="<?= Path::getUrl("/reservation"); ?>" class="button-secondary reveal-4">Réserver</a>
                 </div>
                 <div class="modal fade" id="ModalTarif" tabindex="-1" role="dialog" aria-labelledby="ModalTarifLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
@@ -49,7 +49,7 @@
                                         <tr>
                                             <th class="th-tarif">Classes</th>
                                             <th class="th-tarif">Demi-journée<sup>
-                                                    <a href="javascript:;" data-toggle="tooltip" title="9h-12h ou 13h-16h"><img src="/assets/img/icon/question.png" width="12" alt="tooltip"></a></sup></th>
+                                                    <a href="javascript:;" data-toggle="tooltip" title="9h-12h ou 13h-16h"><img src="<?= Path::getFile("/img/icon/question.png"); ?>" width="12" alt="tooltip"></a></sup></th>
                                             <th class="th-tarif">Journée</th>
                                         </tr>
                                         <tr>
@@ -114,26 +114,26 @@
                     <!-- 1. Pic Pic -->
                     <div class="block-flex reveal">
                         <div class="frame-effect-lt rotate-lt reveal-1">
-                            <img class="block-img-scolaire" src="/assets/img/img_scolaire/mat/mat_picpic.jpg" alt="animation maternelles 1">
+                            <img class="block-img-scolaire" src="<?= Path::getFile("/img/img_scolaire/mat/mat_picpic.jpg"); ?>" alt="animation maternelles 1">
                         </div>
                         <div class="mr90">
                             <div class="block-scol-icon-container reveal-2">
                                 <h2 class="block-title mb10 text-center reveal-2">À la rencontre de Pic-Pic le hérisson</h2>
                                 <div class="scolaire-icon-flex reveal-2">
                                     <div title="Niveaux scolaire(s) concerné(s)" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon1.png" alt="class icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon1.png"); ?>" alt="class icon">
                                         <p class="scolaire-sub-item">M2 - M3</p>
                                     </div>
                                     <div title="Nombre maximum de participants" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon2.png" alt="min icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon2.png"); ?>" alt="min icon">
                                         <p class="scolaire-sub-item">45 élèves max.</p>
                                     </div>
                                     <div title="Durée de l'activité" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon3.png" alt="icone time">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon3.png"); ?>" alt="icone time">
                                         <p class="scolaire-sub-item">1h30</p>
                                     </div>
                                     <div title="Activité intérieure et/ou extérieure" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon4.png" alt="icone int/ext">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon4.png"); ?>" alt="icone int/ext">
                                         <p class="scolaire-sub-item">int./ext.</p>
                                     </div>
                                 </div>
@@ -146,7 +146,7 @@
                                     "À la rencontre de Pic Pic le hérisson" est une activité ludique, éducative et participative sur le mode de vie des hérissons. Les enfants apprendront leurs caractéristiques, leurs alimentations, leurs comportements, ...
                                 </p>
                             </div>
-                            <a class="button-main d-block reveal-4" href="/reservation">
+                            <a class="button-main d-block reveal-4" href="<?= Path::getUrl("/reservation"); ?>">
                                 Réserver
                             </a>
                         </div>
@@ -159,19 +159,19 @@
                                 <h2 class="block-title mb10 text-center reveal-2">De la graine à la plante</h2>
                                 <div class="scolaire-icon-flex reveal-2">
                                     <div title="Niveaux scolaire(s) concerné(s)" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon1.png" alt="class icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon1.png"); ?>" alt="class icon">
                                         <p class="scolaire-sub-item">M2 - M3</p>
                                     </div>
                                     <div title="Nombre maximum de participants" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon2.png" alt="min icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon2.png"); ?>" alt="min icon">
                                         <p class="scolaire-sub-item">45 élèves max.</p>
                                     </div>
                                     <div title="Durée de l'activité" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon3.png" alt="time icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon3.png"); ?>" alt="time icon">
                                         <p class="scolaire-sub-item">1h30</p>
                                     </div>
                                     <div title="Activité intérieure et/ou extérieure" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon4.png" alt="int/ext icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon4.png"); ?>" alt="int/ext icon">
                                         <p class="scolaire-sub-item">int./ext.</p>
                                     </div>
                                 </div>
@@ -184,38 +184,38 @@
                                     Ils participeront également à des activités ludiques qui les transporteront dans un monde magique. Il s'agit d'une aventure éducative où les petits apprennent, s'amusent et développent leur amour pour la nature et les arbres.
                                 </p>
                             </div>
-                            <a class="button-main d-block reveal-4" href="/reservation">
+                            <a class="button-main d-block reveal-4" href="<?= Path::getUrl("/reservation"); ?>">
                                 Réserver
                             </a>
                         </div>
                         <div class="frame-effect-rt rotate-rt reveal-1">
-                            <img class="block-img-scolaire" src="/assets/img/img_scolaire/mat/mat_graine_plante.jpg" alt="animation maternelles 2">
+                            <img class="block-img-scolaire" src="<?= Path::getFile("/img/img_scolaire/mat/mat_graine_plante.jpg"); ?>" alt="animation maternelles 2">
                         </div>
                     </div>
                     <hr class="hr1 my-5">
                     <!-- 3. Eau -->
                     <div class="block-flex reveal">
                         <div class="frame-effect-lt rotate-lt reveal-1">
-                            <img class="block-img-scolaire" src="/assets/img/img_scolaire/mat/mat_eau.jpg" alt="animation maternelles 3">
+                            <img class="block-img-scolaire" src="<?= Path::getFile("/img/img_scolaire/mat/mat_eau.jpg"); ?>" alt="animation maternelles 3">
                         </div>
                         <div class="mr90 bg-radial-effect">
                             <div class="block-scol-icon-container reveal-2">
                                 <h2 class="block-title mb10 text-center reveal-2">L'eau dans tous ses états</h2>
                                 <div class="scolaire-icon-flex reveal-2">
                                     <div title="Niveaux scolaire(s) concerné(s)" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon1.png" alt="class icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon1.png"); ?>" alt="class icon">
                                         <p class="scolaire-sub-item">M2 - M3</p>
                                     </div>
                                     <div title="Nombre maximum de participants" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon2.png" alt="min icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon2.png"); ?>" alt="min icon">
                                         <p class="scolaire-sub-item">45 élèves max.</p>
                                     </div>
                                     <div title="Durée de l'activité" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon3.png" alt="time icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon3.png"); ?>" alt="time icon">
                                         <p class="scolaire-sub-item">1h30</p>
                                     </div>
                                     <div title="Activité intérieure et/ou extérieure" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon4.png" alt="int/ext icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon4.png"); ?>" alt="int/ext icon">
                                         <p class="scolaire-sub-item">int.</p>
                                     </div>
                                 </div>
@@ -228,7 +228,7 @@
                                     Rejoignez-nous pour une aventure éducative pleine de découvertes, où les enfants développeront leur curiosité sur cet or bleu indispensable à la vie.
                                 </p>
                             </div>
-                            <a class="button-main d-block reveal-4" href="/reservation">
+                            <a class="button-main d-block reveal-4" href="<?= Path::getUrl("/reservation"); ?>">
                                 Réserver
                             </a>
                         </div>
@@ -241,19 +241,19 @@
                                 <h2 class="block-title mb10 text-center reveal-2">L'écosystème "mare"</h2>
                                 <div class="scolaire-icon-flex reveal-2">
                                     <div title="Niveaux scolaire(s) concerné(s)" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon1.png" alt="class icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon1.png"); ?>" alt="class icon">
                                         <p class="scolaire-sub-item">M2 - M3</p>
                                     </div>
                                     <div title="Nombre maximum de participants" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon2.png" alt="min icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon2.png"); ?>" alt="min icon">
                                         <p class="scolaire-sub-item">45 élèves max.</p>
                                     </div>
                                     <div title="Durée de l'activité" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon3.png" alt="time icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon3.png"); ?>" alt="time icon">
                                         <p class="scolaire-sub-item">1h30</p>
                                     </div>
                                     <div title="Activité intérieure et/ou extérieure" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon4.png" alt="int/ext icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon4.png"); ?>" alt="int/ext icon">
                                         <p class="scolaire-sub-item">ext.</p>
                                     </div>
                                 </div>
@@ -266,38 +266,38 @@
                                     Une aventure pleine de découvertes, où les enfants s'émerveilleront devant la diversité étonnante de cet écosystème de plus en plus menacé.
                                 </p>
                             </div>
-                            <a class="button-main d-block reveal-4" href="/reservation">
+                            <a class="button-main d-block reveal-4" href="<?= Path::getUrl("/reservation"); ?>">
                                 Réserver
                             </a>
                         </div>
                         <div class="frame-effect-rt rotate-rt reveal-1">
-                            <img class="block-img-scolaire" src="/assets/img/img_scolaire/mat/mat_mare.jpg" alt="animation maternelles 4">
+                            <img class="block-img-scolaire" src="<?= Path::getFile("/img/img_scolaire/mat/mat_mare.jpg"); ?>" alt="animation maternelles 4">
                         </div>
                     </div>
                     <hr class="hr1 my-5">
                     <!-- 5. Sol -->
                     <div class="block-flex reveal">
                         <div class="frame-effect-lt rotate-lt reveal-1">
-                            <img class="block-img-scolaire" src="/assets/img/img_scolaire/mat/mat_faune_sol.jpg" alt="animation maternelles 5">
+                            <img class="block-img-scolaire" src="<?= Path::getFile("/img/img_scolaire/mat/mat_faune_sol.jpg"); ?>" alt="animation maternelles 5">
                         </div>
                         <div class="mr90 bg-radial-effect">
                             <div class="block-scol-icon-container reveal-2">
                                 <h2 class="block-title mb10 text-center reveal-2">La faune du sol</h2>
                                 <div class="scolaire-icon-flex reveal-2">
                                     <div title="Niveaux scolaire(s) concerné(s)" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon1.png" alt="class icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon1.png"); ?>" alt="class icon">
                                         <p class="scolaire-sub-item">M2 - M3 </p>
                                     </div>
                                     <div title="Nombre maximum de participants" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon2.png" alt="min icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon2.png"); ?>" alt="min icon">
                                         <p class="scolaire-sub-item">45 élèves max.</p>
                                     </div>
                                     <div title="Durée de l'activité" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon3.png" alt="time icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon3.png"); ?>" alt="time icon">
                                         <p class="scolaire-sub-item">1h30</p>
                                     </div>
                                     <div title="Activité intérieure et/ou extérieure" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon4.png" alt="int/ext icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon4.png"); ?>" alt="int/ext icon">
                                         <p class="scolaire-sub-item">int.</p>
                                     </div>
                                 </div>
@@ -310,7 +310,7 @@
                                     Une aventure éducative passionnante où les enfants deviendront de véritables explorateurs de la faune du sol.
                                 </p>
                             </div>
-                            <a class="button-main d-block reveal-4" href="/reservation">
+                            <a class="button-main d-block reveal-4" href="<?= Path::getUrl("/reservation"); ?>">
                                 Réserver
                             </a>
                         </div>
@@ -329,19 +329,19 @@
                                 <h2 class="block-title mb10 text-center reveal-2">Exposition "Biodiversité"</h2>
                                 <div class="scolaire-icon-flex reveal-2">
                                     <div title="Niveaux scolaire(s) concerné(s)" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon1.png" alt="class icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon1.png"); ?>" alt="class icon">
                                         <p class="scolaire-sub-item">P1 - P6</p>
                                     </div>
                                     <div title="Nombre maximum de participants" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon2.png" alt="min icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon2.png"); ?>" alt="min icon">
                                         <p class="scolaire-sub-item">45 élèves max.</p>
                                     </div>
                                     <div title="Durée de l'activité" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon3.png" alt="time icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon3.png"); ?>" alt="time icon">
                                         <p class="scolaire-sub-item">1h30</p>
                                     </div>
                                     <div title="Activité intérieure et/ou extérieure" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon4.png" alt="int/ext icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon4.png"); ?>" alt="int/ext icon">
                                         <p class="scolaire-sub-item">int.</p>
                                     </div>
                                 </div>
@@ -353,39 +353,39 @@
                                     Des exemples concrets encourageront les élèves à réfléchir à leur propre empreinte écologique. Cette exposition vise à inspirer les élèves pour qu'ils deviennent des acteurs de la préservation de la biodiversité.
                                 </p>
                             </div>
-                            <a class="button-main d-block reveal-4" href="/reservation">
+                            <a class="button-main d-block reveal-4" href="<?= Path::getUrl("/reservation"); ?>">
                                 Réserver
-                            </a>>
+                            </a>
 
                         </div>
                         <div class="frame-effect-rt rotate-rt reveal-1">
-                            <img class="block-img-scolaire" src="/assets/img/img_scolaire/pri/pri1.jpg" alt="animation primaire 1">
+                            <img class="block-img-scolaire" src="<?= Path::getFile("/img/img_scolaire/pri/pri1.jpg"); ?>" alt="animation primaire 1">
                         </div>
                     </div>
                     <hr class="hr1 my-5">
                     <!-- 2. Eau -->
                     <div class="block-flex reveal">
                         <div class="frame-effect-lt rotate-lt reveal-1">
-                            <img class="block-img-scolaire" src="/assets/img/img_scolaire/pri/pri_etude_eau.jpg" alt="animation primaire 2">
+                            <img class="block-img-scolaire" src="<?= Path::getFile("/img/img_scolaire/pri/pri_etude_eau.jpg"); ?>" alt="animation primaire 2">
                         </div>
                         <div class="mr90 bg-radial-effect">
                             <div class="block-scol-icon-container  reveal-2">
                                 <h2 class="block-title mb10 text-center reveal-2">Étude et analyse de l'eau</h2>
                                 <div class="scolaire-icon-flex reveal-2">
                                     <div title="Niveaux scolaire(s) concerné(s)" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon1.png" alt="class icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon1.png"); ?>" alt="class icon">
                                         <p class="scolaire-sub-item">P1 - P6 </p>
                                     </div>
                                     <div title="Nombre maximum de participants" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon2.png" alt="min icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon2.png"); ?>" alt="min icon">
                                         <p class="scolaire-sub-item">45 élèves max.</p>
                                     </div>
                                     <div title="Durée de l'activité" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon3.png" alt="time icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon3.png"); ?>" alt="time icon">
                                         <p class="scolaire-sub-item">1h30</p>
                                     </div>
                                     <div title="Activité intérieure et/ou extérieure" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon4.png" alt="int/ext icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon4.png"); ?>" alt="int/ext icon">
                                         <p class="scolaire-sub-item">int.</p>
                                     </div>
                                 </div>
@@ -398,9 +398,9 @@
                                     Les élèves repartiront avec de nouvelles connaissances et une meilleure compréhension de son rôle crucial dans notre environnement. </p>
                                 </p>
                             </div>
-                            <a class="button-main d-block reveal-4" href="/reservation">
+                            <a class="button-main d-block reveal-4" href="<?= Path::getUrl("/reservation"); ?>">
                                 Réserver
-                            </a>>
+                            </a>
                         </div>
                     </div>
                     <hr class="hr1 my-5">
@@ -411,19 +411,19 @@
                                 <h2 class="block-title mb10 text-center reveal-2">L'écosystème "mare"</h2>
                                 <div class="scolaire-icon-flex reveal-2">
                                     <div title="Niveaux scolaire(s) concerné(s)" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon1.png" alt="class icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon1.png"); ?>" alt="class icon">
                                         <p class="scolaire-sub-item">P1 - P6</p>
                                     </div>
                                     <div title="Nombre maximum de participants" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon2.png" alt="min icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon2.png"); ?>" alt="min icon">
                                         <p class="scolaire-sub-item">45 élèves max.</p>
                                     </div>
                                     <div title="Durée de l'activité" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon3.png" alt="time icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon3.png"); ?>" alt="time icon">
                                         <p class="scolaire-sub-item">1h30</p>
                                     </div>
                                     <div title="Activité intérieure et/ou extérieure" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon4.png" alt="int/ext icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon4.png"); ?>" alt="int/ext icon">
                                         <p class="scolaire-sub-item">ext.</p>
                                     </div>
                                 </div>
@@ -436,39 +436,39 @@
                                     Ils apprendront comment ces différentes espèces interagissent pour maintenir l'équilibre fragile de cet écosystème. Une occasion exceptionnelle d'apprécier la nature de manière concrète et éducative, tout en se sensibilisant à l'importance de préserver ces habitats précieux.
                                 </p>
                             </div>
-                            <a class="button-main d-block reveal-4" href="/reservation">
+                            <a class="button-main d-block reveal-4" href="<?= Path::getUrl("/reservation"); ?>">
                                 Réserver
-                            </a>>
+                            </a>
 
                         </div>
                         <div class="frame-effect-rt rotate-rt reveal-1">
-                            <img class="block-img-scolaire" src="/assets/img/img_scolaire/pri/pri_mare.jpg" alt="animation primaire 3">
+                            <img class="block-img-scolaire" src="<?= Path::getFile("/img/img_scolaire/pri/pri_mare.jpg"); ?>" alt="animation primaire 3">
                         </div>
                     </div>
                     <hr class="hr1 my-5">
                     <!-- 4. Sol -->
                     <div class="block-flex reveal">
                         <div class="frame-effect-lt rotate-lt reveal-1">
-                            <img class="block-img-scolaire" src="/assets/img/img_scolaire/pri/pri_faune_sol.jpg" alt="animation priamire 4">
+                            <img class="block-img-scolaire" src="<?= Path::getFile("/img/img_scolaire/pri/pri_faune_sol.jpg"); ?>" alt="animation priamire 4">
                         </div>
                         <div class="mr90 bg-radial-effect">
                             <div class="block-scol-icon-container  reveal-2">
                                 <h2 class="block-title mb10 text-center reveal-2">La faune du sol</h2>
                                 <div class="scolaire-icon-flex reveal-2">
                                     <div title="Niveaux scolaire(s) concerné(s)" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon1.png" alt="class icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon1.png"); ?>" alt="class icon">
                                         <p class="scolaire-sub-item">P1 - P6</p>
                                     </div>
                                     <div title="Nombre maximum de participants" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon2.png" alt="min icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon2.png"); ?>" alt="min icon">
                                         <p class="scolaire-sub-item">45 élèves max.</p>
                                     </div>
                                     <div title="Durée de l'activité" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon3.png" alt="time icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon3.png"); ?>" alt="time icon">
                                         <p class="scolaire-sub-item">1h30</p>
                                     </div>
                                     <div title="Activité intérieure et/ou extérieure" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon4.png" alt="int/ext icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon4.png"); ?>" alt="int/ext icon">
                                         <p class="scolaire-sub-item">int.</p>
                                     </div>
                                 </div>
@@ -481,9 +481,9 @@
                                     Ils apprendront de manière ludique et apprécieront la complexité de ce milieu souvent méconnu. Une opportunité unique d'élargir leur compréhension de la nature et de développer un amour pour la biodiversité.
                                 </p>
                             </div>
-                            <a class="button-main d-block reveal-4" href="/reservation">
+                            <a class="button-main d-block reveal-4" href="<?= Path::getUrl("/reservation"); ?>">
                                 Réserver
-                            </a>>
+                            </a>
                         </div>
                     </div>
                     <hr class="hr1 my-5">
@@ -492,22 +492,22 @@
                         <div class="ml90 bg-radial-effect">
                             <div class="block-scol-icon-container  reveal-2">
                                 <h2 class="block-title mb10 text-center reveal-2" id="demi-vegetal">Le monde végétal</h2>
-                                <img src="/assets/img/icon/icon-scolaire/img-demi.png" class="img-demi-ml reveal-1" alt="formule 3h">
+                                <img src="<?= Path::getFile("/img/icon/icon-scolaire/img-demi.png"); ?>" class="img-demi-ml reveal-1" alt="formule 3h">
                                 <div class="scolaire-icon-flex reveal-2">
                                     <div title="Niveaux scolaire(s) concerné(s)" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon1.png" alt="class icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon1.png"); ?>" alt="class icon">
                                         <p class="scolaire-sub-item">P5 - P6</p>
                                     </div>
                                     <div title="Mininmum et Nombre maximum de participants" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon2.png" alt="min icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon2.png"); ?>" alt="min icon">
                                         <p class="scolaire-sub-item">20 élèves max.</p>
                                     </div>
                                     <div title="Durée de l'activité" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon3.png" alt="time icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon3.png"); ?>" alt="time icon">
                                         <p class="scolaire-sub-item">3h</p>
                                     </div>
                                     <div title="Activité intérieure et/ou extérieure" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon4.png" alt="int/ext icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon4.png"); ?>" alt="int/ext icon">
                                         <p class="scolaire-sub-item">int./ext.</p>
                                     </div>
                                 </div>
@@ -520,39 +520,39 @@
                                     Sur le terrain, ils pourront mettre leurs connaissances en pratique en tentant d'identifier certains arbres qui peuplent les anciennes carrières. Ils découvriront l'importance des plantes pour notre environnement et la nécessité de les protéger.
                                 </p>
                             </div>
-                            <a class="button-main d-block reveal-4" href="/reservation">
+                            <a class="button-main d-block reveal-4" href="<?= Path::getUrl("/reservation"); ?>">
                                 Réserver
-                            </a>>
+                            </a>
                         </div>
                         <div class="frame-effect-rt rotate-rt reveal-1">
-                            <img class="block-img-scolaire" src="/assets/img/img_scolaire/pri/pri_monde_veg.jpg" alt="animation primaire 5">
+                            <img class="block-img-scolaire" src="<?= Path::getFile("/img/img_scolaire/pri/pri_monde_veg.jpg"); ?>" alt="animation primaire 5">
                         </div>
                     </div>
                     <hr class="hr1 my-5">
                     <!-- 6. Plantes et insectes -->
                     <div class="block-flex relative reveal">
                         <div class="frame-effect-lt rotate-lt reveal-1">
-                            <img class="block-img-scolaire" src="/assets/img/img_scolaire/pri/pri_plante_insecte.jpg" alt="animation primaires 6">
+                            <img class="block-img-scolaire" src="<?= Path::getFile("/img/img_scolaire/pri/pri_plante_insecte.jpg"); ?>" alt="animation primaires 6">
                         </div>
                         <div class="mr90 bg-radial-effect">
                             <div class="block-scol-icon-container reveal-2">
                                 <h2 class="block-title mb10 text-center reveal-2" id="demi-plante">Arbres et vie souterraine</h2>
-                                <img src="/assets/img/icon/icon-scolaire/img-demi.png" class="img-demi-mr reveal-1" alt="formule 3h">
+                                <img src="<?= Path::getFile("/img/icon/icon-scolaire/img-demi.png"); ?>" class="img-demi-mr reveal-1" alt="formule 3h">
                                 <div class="scolaire-icon-flex reveal-2">
                                     <div title="Niveaux scolaire(s) concerné(s)" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon1.png" alt="class icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon1.png"); ?>" alt="class icon">
                                         <p class="scolaire-sub-item">P1 - P6</p>
                                     </div>
                                     <div title="Mininmum et Nombre maximum de participants" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon2.png" alt="min icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon2.png"); ?>" alt="min icon">
                                         <p class="scolaire-sub-item">20 élèves max.</p>
                                     </div>
                                     <div title="Durée de l'activité" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon3.png" alt="time icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon3.png"); ?>" alt="time icon">
                                         <p class="scolaire-sub-item">3h</p>
                                     </div>
                                     <div title="Activité intérieure et/ou extérieure" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon4.png" alt="int/ext icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon4.png"); ?>" alt="int/ext icon">
                                         <p class="scolaire-sub-item">int./ext.</p>
                                     </div>
                                 </div>
@@ -566,9 +566,9 @@
                                 </p>
                             </div>
 
-                            <a class="button-main d-block reveal-4" href="/reservation">
+                            <a class="button-main d-block reveal-4" href="<?= Path::getUrl("/reservation"); ?>">
                                 Réserver
-                            </a>>
+                            </a>
                         </div>
                     </div>
                     <hr class="hr1 my-5">
@@ -579,19 +579,19 @@
                                 <h2 class="block-title mb10 text-center reveal-2">Les chauves-souris</h2>
                                 <div class="scolaire-icon-flex reveal-2">
                                     <div title="Niveaux scolaire(s) concerné(s)" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon1.png" alt="class icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon1.png"); ?>" alt="class icon">
                                         <p class="scolaire-sub-item">P1 - P6</p>
                                     </div>
                                     <div title="Nombre maximum de participants" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon2.png" alt="min icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon2.png"); ?>" alt="min icon">
                                         <p class="scolaire-sub-item">45 élèves max.</p>
                                     </div>
                                     <div title="Durée de l'activité" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon3.png" alt="time icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon3.png"); ?>" alt="time icon">
                                         <p class="scolaire-sub-item">1h30</p>
                                     </div>
                                     <div title="Activité intérieure et/ou extérieure" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon4.png" alt="int/ext icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon4.png"); ?>" alt="int/ext icon">
                                         <p class="scolaire-sub-item">int.</p>
                                     </div>
                                 </div>
@@ -602,38 +602,38 @@
                                 <p class="text-scolaire-resp">
                                     Ils apprendront comment les chauves-souris chassent, se déplacent et se repèrent dans l'obscurité. Ils comprendront également l'importance de préserver l'obscurité de la nuit pour la survie de ces animaux. </p>
                             </div>
-                            <a class="button-main d-block reveal-4" href="/reservation">
+                            <a class="button-main d-block reveal-4" href="<?= Path::getUrl("/reservation"); ?>">
                                 Réserver
-                            </a>>
+                            </a>
                         </div>
                         <div class="frame-effect-rt rotate-rt reveal-1">
-                            <img class="block-img-scolaire" src="/assets/img/img_scolaire/pri/pri_chauve_souris.jpg" alt="animation primaire 7">
+                            <img class="block-img-scolaire" src="<?= Path::getFile("/img/img_scolaire/pri/pri_chauve_souris.jpg"); ?>" alt="animation primaire 7">
                         </div>
                     </div>
                     <hr class="hr1 my-5">
                     <!-- 8. Tri et recyclage -->
                     <div class="block-flex reveal">
                         <div class="frame-effect-lt rotate-lt reveal-1">
-                            <img class="block-img-scolaire" src="/assets/img/img_scolaire/pri/pri_tri.jpg" alt="animation primaires 8">
+                            <img class="block-img-scolaire" src="<?= Path::getFile("/img/img_scolaire/pri/pri_tri.jpg"); ?>" alt="animation primaires 8">
                         </div>
                         <div class="mr90 bg-radial-effect">
                             <div class="block-scol-icon-container  reveal-2">
                                 <h2 class="block-title mb10 text-center reveal-2">Tri et recyclage</h2>
                                 <div class="scolaire-icon-flex reveal-2">
                                     <div title="Niveaux scolaire(s) concerné(s)" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon1.png" alt="class icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon1.png"); ?>" alt="class icon">
                                         <p class="scolaire-sub-item">P1 - P6</p>
                                     </div>
                                     <div title="Nombre maximum de participants" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon2.png" alt="min icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon2.png"); ?>" alt="min icon">
                                         <p class="scolaire-sub-item">45 élèves max.</p>
                                     </div>
                                     <div title="Durée de l'activité" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon3.png" alt="time icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon3.png"); ?>" alt="time icon">
                                         <p class="scolaire-sub-item">1h30</p>
                                     </div>
                                     <div title="Activité intérieure et/ou extérieure" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon4.png" alt="int/ext icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon4.png"); ?>" alt="int/ext icon">
                                         <p class="scolaire-sub-item">int.</p>
                                     </div>
                                 </div>
@@ -646,9 +646,9 @@
                                     Après cette aventure éducative, les élèves deviendront de véritables experts trieurs en apprenant les bonnes pratiques de tri et en découvrant les différentes filières de recyclage.
                                 </p>
                             </div>
-                            <a class="button-main d-block reveal-4" href="/reservation">
+                            <a class="button-main d-block reveal-4" href="<?= Path::getUrl("/reservation"); ?>">
                                 Réserver
-                            </a>>
+                            </a>
                         </div>
                     </div>
                     <hr class="hr1 my-5">
@@ -657,22 +657,22 @@
                         <div class="ml90 bg-radial-effect">
                             <div class="block-scol-icon-container  reveal-2">
                                 <h2 class="block-title mb10 text-center reveal-2" id="demi-oiseau">Découverte des oiseaux</h2>
-                                <img src="/assets/img/icon/icon-scolaire/img-demi.png" class="img-demi-ml reveal-1" alt="formule 3h">
+                                <img src="<?= Path::getFile("/img/icon/icon-scolaire/img-demi.png"); ?>" class="img-demi-ml reveal-1" alt="formule 3h">
                                 <div class="scolaire-icon-flex reveal-2">
                                     <div title="Niveaux scolaire(s) concerné(s)" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon1.png" alt="class icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon1.png"); ?>" alt="class icon">
                                         <p class="scolaire-sub-item">P1 - P6</p>
                                     </div>
                                     <div title="Mininmum et Nombre maximum de participants" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon2.png" alt="min icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon2.png"); ?>" alt="min icon">
                                         <p class="scolaire-sub-item">20 élèves max.</p>
                                     </div>
                                     <div title="Durée de l'activité" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon3.png" alt="time icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon3.png"); ?>" alt="time icon">
                                         <p class="scolaire-sub-item">3h00</p>
                                     </div>
                                     <div title="Activité intérieure et/ou extérieure" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon4.png" alt="int/ext icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon4.png"); ?>" alt="int/ext icon">
                                         <p class="scolaire-sub-item">int./ext.</p>
                                     </div>
                                 </div>
@@ -682,39 +682,39 @@
                                     Les élèves partiront pour une aventure à travers le monde fascinant des oiseaux. Pendant cette demi-journée immersive, les élèves apprendront à reconnaître différentes espèces d'oiseaux et découvriront les adaptations étonnantes qui leur permettent de survivre dans différents habitats.
                                 </p>
                             </div>
-                            <a class="button-main d-block reveal-4" href="/reservation">
+                            <a class="button-main d-block reveal-4" href="<?= Path::getUrl("/reservation"); ?>">
                                 Réserver
-                            </a>>
+                            </a>
 
                         </div>
                         <div class="frame-effect-rt rotate-rt reveal-1">
-                            <img class="block-img-scolaire" src="/assets/img/img_scolaire/pri/pri_decouverte_oiseaux.jpg" alt="animation primaire 9">
+                            <img class="block-img-scolaire" src="<?= Path::getFile("/img/img_scolaire/pri/pri_decouverte_oiseaux.jpg"); ?>" alt="animation primaire 9">
                         </div>
                     </div>
                     <hr class="hr1 my-5">
                     <!-- 10. Les empreintes animales -->
                     <div class="block-flex reveal">
                         <div class="frame-effect-lt rotate-lt reveal-1">
-                            <img class="block-img-scolaire" src="/assets/img/img_scolaire/pri/pri_empreinte.jpg" alt="animation primaires 10">
+                            <img class="block-img-scolaire" src="<?= Path::getFile("/img/img_scolaire/pri/pri_empreinte.jpg"); ?>" alt="animation primaires 10">
                         </div>
                         <div class="mr90 bg-radial-effect">
                             <div class="block-scol-icon-container reveal-2">
                                 <h2 class="block-title mb10 text-center reveal-2">Les empreintes animales</h2>
                                 <div class="scolaire-icon-flex reveal-2">
                                     <div title="Niveaux scolaire(s) concerné(s)" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon1.png" alt="class icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon1.png"); ?>" alt="class icon">
                                         <p class="scolaire-sub-item">P1 - P6</p>
                                     </div>
                                     <div title="Nombre maximum de participants" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon2.png" alt="min icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon2.png"); ?>" alt="min icon">
                                         <p class="scolaire-sub-item">45 élèves max.</p>
                                     </div>
                                     <div title="Durée de l'activité" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon3.png" alt="time icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon3.png"); ?>" alt="time icon">
                                         <p class="scolaire-sub-item">1h30</p>
                                     </div>
                                     <div title="Activité intérieure et/ou extérieure" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon4.png" alt="int/ext icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon4.png"); ?>" alt="int/ext icon">
                                         <p class="scolaire-sub-item">int.</p>
                                     </div>
                                 </div>
@@ -726,9 +726,9 @@
                                 <p class="text-scolaire-resp">
                                     Une expérience ludique et éducative qui éveillera leur curiosité sur les animaux et la nature.</p>
                             </div>
-                            <a class="button-main d-block reveal-4" href="/reservation">
+                            <a class="button-main d-block reveal-4" href="<?= Path::getUrl("/reservation"); ?>">
                                 Réserver
-                            </a>>
+                            </a>
                         </div>
                     </div>
                     <hr class="hr1 my-5">
@@ -739,19 +739,19 @@
                                 <h2 class="block-title mb10 text-center reveal-2">Becs et pattes</h2>
                                 <div class="scolaire-icon-flex reveal-2">
                                     <div title="Niveaux scolaire(s) concerné(s)" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon1.png" alt="class icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon1.png"); ?>" alt="class icon">
                                         <p class="scolaire-sub-item">P1 - P6</p>
                                     </div>
                                     <div title="Nombre maximum de participants" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon2.png" alt="min icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon2.png"); ?>" alt="min icon">
                                         <p class="scolaire-sub-item">45 élèves max.</p>
                                     </div>
                                     <div title="Durée de l'activité" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon3.png" alt="time icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon3.png"); ?>" alt="time icon">
                                         <p class="scolaire-sub-item">1h30</p>
                                     </div>
                                     <div title="Activité intérieure et/ou extérieure" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon4.png" alt="int/ext icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon4.png"); ?>" alt="int/ext icon">
                                         <p class="scolaire-sub-item">int.</p>
                                     </div>
                                 </div>
@@ -764,39 +764,39 @@
                                     Une activité éducative où la curiosité et la compréhension s'épanouissent à travers l'observation et l'exploration du monde ornithologique.
                                 </p>
                             </div>
-                            <a class="button-main d-block reveal-4" href="/reservation">
+                            <a class="button-main d-block reveal-4" href="<?= Path::getUrl("/reservation"); ?>">
                                 Réserver
-                            </a>>
+                            </a>
 
                         </div>
                         <div class="frame-effect-rt rotate-rt reveal-1">
-                            <img class="block-img-scolaire" src="/assets/img/img_scolaire/pri/pri_becs_pattes.jpg" alt="animation primaire 11">
+                            <img class="block-img-scolaire" src="<?= Path::getFile("/img/img_scolaire/pri/pri_becs_pattes.jpg"); ?>" alt="animation primaire 11">
                         </div>
                     </div>
                     <hr class="hr1 my-5">
                     <!-- 12. Oiseaux de nos carrières -->
                     <div class="block-flex reveal">
                         <div class="frame-effect-lt rotate-lt reveal-1">
-                            <img class="block-img-scolaire" src="/assets/img/img_scolaire/pri/pri_oiseaux_carriere.jpg" alt="animation primaires 12">
+                            <img class="block-img-scolaire" src="<?= Path::getFile("/img/img_scolaire/pri/pri_oiseaux_carriere.jpg"); ?>" alt="animation primaires 12">
                         </div>
                         <div class="mr90 bg-radial-effect">
                             <div class="block-scol-icon-container  reveal-2">
                                 <h2 class="block-title mb10 text-center reveal-2">Les oiseaux de nos carrières</h2>
                                 <div class="scolaire-icon-flex reveal-2">
                                     <div title="Niveaux scolaire(s) concerné(s)" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon1.png" alt="class icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon1.png"); ?>" alt="class icon">
                                         <p class="scolaire-sub-item">P1 - P6</p>
                                     </div>
                                     <div title="Nombre maximum de participants" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon2.png" alt="min icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon2.png"); ?>" alt="min icon">
                                         <p class="scolaire-sub-item">45 élèves max.</p>
                                     </div>
                                     <div title="Durée de l'activité" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon3.png" alt="time icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon3.png"); ?>" alt="time icon">
                                         <p class="scolaire-sub-item">1h30</p>
                                     </div>
                                     <div title="Activité intérieure et/ou extérieure" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon4.png" alt="int/ext icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon4.png"); ?>" alt="int/ext icon">
                                         <p class="scolaire-sub-item">ext.</p>
                                     </div>
                                 </div>
@@ -809,9 +809,9 @@
                                     Une expérience immersive où la découverte et l'amusement se rencontrent au rythme des chants mélodieux des oiseaux.
                                 </p>
                             </div>
-                            <a class="button-main d-block reveal-4" href="/reservation">
+                            <a class="button-main d-block reveal-4" href="<?= Path::getUrl("/reservation"); ?>">
                                 Réserver
-                            </a>>
+                            </a>
                         </div>
                     </div>
                     <hr class="hr1 my-5">
@@ -820,22 +820,22 @@
                         <div class="ml90 bg-radial-effect">
                             <div class="block-scol-icon-container  reveal-2">
                                 <h2 class="block-title mb10 text-center reveal-2" id="demi-mare">La mare et ses habitants</h2>
-                                <img src="/assets/img/icon/icon-scolaire/img-demi.png" class="img-demi-ml reveal-1" alt="formule 3h">
+                                <img src="<?= Path::getFile("/img/icon/icon-scolaire/img-demi.png"); ?>" class="img-demi-ml reveal-1" alt="formule 3h">
                                 <div class="scolaire-icon-flex reveal-2">
                                     <div title="Niveaux scolaire(s) concerné(s)" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon1.png" alt="class icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon1.png"); ?>" alt="class icon">
                                         <p class="scolaire-sub-item">P1 - P6</p>
                                     </div>
                                     <div title="Mininmum et Nombre maximum de participants" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon2.png" alt="min icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon2.png"); ?>" alt="min icon">
                                         <p class="scolaire-sub-item">20 élèves max.</p>
                                     </div>
                                     <div title="Durée de l'activité" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon3.png" alt="time icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon3.png"); ?>" alt="time icon">
                                         <p class="scolaire-sub-item">3h00</p>
                                     </div>
                                     <div title="Activité intérieure et/ou extérieure" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon4.png" alt="int/ext icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon4.png"); ?>" alt="int/ext icon">
                                         <p class="scolaire-sub-item">int./ext.</p>
                                     </div>
                                 </div>
@@ -848,40 +848,40 @@
                                     Les élèves auront la chance d'explorer, d'observer et de plonger dans ce milieu naturel unique et fascinant.
                                 </p>
                             </div>
-                            <a class="button-main d-block reveal-4" href="/reservation">
+                            <a class="button-main d-block reveal-4" href="<?= Path::getUrl("/reservation"); ?>">
                                 Réserver
-                            </a>>
+                            </a>
 
                         </div>
                         <div class="frame-effect-rt rotate-rt reveal-1">
-                            <img class="block-img-scolaire" src="/assets/img/img_scolaire/pri/pri_habitant_mare.jpg" alt="animation primaire 11">
+                            <img class="block-img-scolaire" src="<?= Path::getFile("/img/img_scolaire/pri/pri_habitant_mare.jpg"); ?>" alt="animation primaire 11">
                         </div>
                     </div>
                     <hr class="hr1 my-5">
                     <!-- 14. La nature et sa préservation -->
                     <div class="block-flex relative reveal">
                         <div class="frame-effect-lt rotate-lt reveal-1">
-                            <img class="block-img-scolaire" src="/assets/img/img_scolaire/pri/pri_nature_preservation.jpg" alt="animation primaires 12">
+                            <img class="block-img-scolaire" src="<?= Path::getFile("/img/img_scolaire/pri/pri_nature_preservation.jpg"); ?>" alt="animation primaires 12">
                         </div>
                         <div class="mr90 bg-radial-effect">
                             <div class="block-scol-icon-container  reveal-2">
                                 <h2 class="block-title mb10 text-center reveal-2" id="demi-envi">La nature et sa préservation</h2>
-                                <img src="/assets/img/icon/icon-scolaire/img-demi.png" class="img-demi-mr reveal-1" alt="formule 3h">
+                                <img src="<?= Path::getFile("/img/icon/icon-scolaire/img-demi.png"); ?>" class="img-demi-mr reveal-1" alt="formule 3h">
                                 <div class="scolaire-icon-flex reveal-2">
                                     <div title="Niveaux scolaire(s) concerné(s)" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon1.png" alt="class icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon1.png"); ?>" alt="class icon">
                                         <p class="scolaire-sub-item">P1 - P6</p>
                                     </div>
                                     <div title="Mininmum et Nombre maximum de participants" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon2.png" alt="min icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon2.png"); ?>" alt="min icon">
                                         <p class="scolaire-sub-item">20 élèves max.</p>
                                     </div>
                                     <div title="Durée de l'activité" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon3.png" alt="time icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon3.png"); ?>" alt="time icon">
                                         <p class="scolaire-sub-item">3h</p>
                                     </div>
                                     <div title="Activité intérieure et/ou extérieure" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon4.png" alt="int/ext icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon4.png"); ?>" alt="int/ext icon">
                                         <p class="scolaire-sub-item">int./ext.</p>
                                     </div>
                                 </div>
@@ -892,9 +892,9 @@
                                 <p class="text-scolaire-resp">
                                     Les élèves participeront ensuite à des activcités ludiques et pédagogiques qui mettront en évidence l'importance du tri et du recyclage des déchets pour tenter de préserver cette biodiversité. </p>
                             </div>
-                            <a class="button-main d-block reveal-4" href="/reservation">
+                            <a class="button-main d-block reveal-4" href="<?= Path::getUrl("/reservation"); ?>">
                                 Réserver
-                            </a>>
+                            </a>
                         </div>
                     </div>
                     <hr class="hr1 my-5">
@@ -903,22 +903,22 @@
                         <div class="ml90 bg-radial-effect">
                             <div class="block-scol-icon-container  reveal-2">
                                 <h2 class="block-title mb10 text-center reveal-2" id="demi-eau">L'univers de l'eau</h2>
-                                <img src="/assets/img/icon/icon-scolaire/img-demi.png" class="img-demi-ml reveal-1" alt="formule 3h">
+                                <img src="<?= Path::getFile("/img/icon/icon-scolaire/img-demi.png"); ?>" class="img-demi-ml reveal-1" alt="formule 3h">
                                 <div class="scolaire-icon-flex reveal-2">
                                     <div title="Niveaux scolaire(s) concerné(s)" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon1.png" alt="class icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon1.png"); ?>" alt="class icon">
                                         <p class="scolaire-sub-item">P1 - P6</p>
                                     </div>
                                     <div title="Mininmum et Nombre maximum de participants" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon2.png" alt="min icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon2.png"); ?>" alt="min icon">
                                         <p class="scolaire-sub-item">20 élèves max.</p>
                                     </div>
                                     <div title="Durée de l'activité" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon3.png" alt="time icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon3.png"); ?>" alt="time icon">
                                         <p class="scolaire-sub-item">3h00</p>
                                     </div>
                                     <div title="Activité intérieure et/ou extérieure" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon4.png" alt="int/ext icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon4.png"); ?>" alt="int/ext icon">
                                         <p class="scolaire-sub-item">int.</p>
                                     </div>
                                 </div>
@@ -930,39 +930,39 @@
                                     A travers des expériences ludiques et des expériences interactives, ils découvriront notamment comment l'eau peut se métamorphoser d'un état à un autre. </p>
                                 </p>
                             </div>
-                            <a class="button-main d-block reveal-4" href="/reservation">
+                            <a class="button-main d-block reveal-4" href="<?= Path::getUrl("/reservation"); ?>">
                                 Réserver
-                            </a>>
+                            </a>
 
                         </div>
                         <div class="frame-effect-rt rotate-rt reveal-1">
-                            <img class="block-img-scolaire" src="/assets/img/img_scolaire/pri/pri_univers-eau.jpg" alt="animation primaire 11">
+                            <img class="block-img-scolaire" src="<?= Path::getFile("/img/img_scolaire/pri/pri_univers-eau.jpg"); ?>" alt="animation primaire 11">
                         </div>
                     </div>
                     <hr class="hr1 my-5">
                     <!-- 16. Les phasmes -->
                     <div class="block-flex relative reveal">
                         <div class="frame-effect-lt rotate-lt reveal-1">
-                            <img class="block-img-scolaire" src="/assets/img/img_scolaire/pri/pri_phasme.jpg" alt="animation primaires 12">
+                            <img class="block-img-scolaire" src="<?= Path::getFile("/img/img_scolaire/pri/pri_phasme.jpg"); ?>" alt="animation primaires 12">
                         </div>
                         <div class="mr90 bg-radial-effect">
                             <div class="block-scol-icon-container reveal-2">
                                 <h2 class="block-title mb10 text-center reveal-2">Les phasmes : maîtres du mimétisme</h2>
                                 <div class="scolaire-icon-flex reveal-2">
                                     <div title="Niveaux scolaire(s) concerné(s)" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon1.png" alt="class icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon1.png"); ?>" alt="class icon">
                                         <p class="scolaire-sub-item">P1 - P4</p>
                                     </div>
                                     <div title="Mininmum et Nombre maximum de participants" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon2.png" alt="min icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon2.png"); ?>" alt="min icon">
                                         <p class="scolaire-sub-item">45 élèves max.</p>
                                     </div>
                                     <div title="Durée de l'activité" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon3.png" alt="time icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon3.png"); ?>" alt="time icon">
                                         <p class="scolaire-sub-item">1h30</p>
                                     </div>
                                     <div title="Activité intérieure et/ou extérieure" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon4.png" alt="int/ext icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon4.png"); ?>" alt="int/ext icon">
                                         <p class="scolaire-sub-item">int.</p>
                                     </div>
                                 </div>
@@ -975,9 +975,9 @@
                                     Les enfants auront la chance d'apprendre en se divertissant et d'observer ces créatures de près.
                                 </p>
                             </div>
-                            <a class="button-main d-block reveal-4" href="/reservation">
+                            <a class="button-main d-block reveal-4" href="<?= Path::getUrl("/reservation"); ?>">
                                 Réserver
-                            </a>>
+                            </a>
                         </div>
                     </div>
                     <hr class="hr1 my-5">
@@ -991,22 +991,22 @@
                         <div class="ml90 bg-radial-effect">
                             <div class="block-scol-icon-container reveal-2">
                                 <h2 class="block-title mb10 text-center reveal-2">Visites des carrières</h2>
-                                <img src="/assets/img/icon/icon-scolaire/img-demi.png" class="img-demi-mr reveal-1" alt="formule 3h">
+                                <img src="<?= Path::getFile("/img/icon/icon-scolaire/img-demi.png"); ?>" class="img-demi-mr reveal-1" alt="formule 3h">
                                 <div class="scolaire-icon-flex reveal-2">
                                     <div title="Niveaux scolaire(s) concerné(s)" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon1.png" alt="class icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon1.png"); ?>" alt="class icon">
                                         <p class="scolaire-sub-item">S1 - S6</p>
                                     </div>
                                     <div title="Nombre maximum de participants" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon2.png" alt="min icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon2.png"); ?>" alt="min icon">
                                         <p class="scolaire-sub-item">20 élèves max.</p>
                                     </div>
                                     <div title="Durée de l'activité" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon3.png" alt="time icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon3.png"); ?>" alt="time icon">
                                         <p class="scolaire-sub-item">3h</p>
                                     </div>
                                     <div title="Activité intérieure et/ou extérieure" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon4.png" alt="int/ext icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon4.png"); ?>" alt="int/ext icon">
                                         <p class="scolaire-sub-item">ext.</p>
                                     </div>
                                 </div>
@@ -1019,40 +1019,40 @@
                                     Choisissez parmis des thèmes captivants tels que la botanique, la découverte de l'écosystème "mare", l'ornithologie ou encore l'énergie durable. Chaque visite offre une expérience unique, permettant aux élèves de découvrir et d'apprendre au cœur d'un environnement unique.
                                 </p>
                             </div>
-                            <a class="button-main d-block reveal-4" href="/reservation">
+                            <a class="button-main d-block reveal-4" href="<?= Path::getUrl("/reservation"); ?>">
                                 Réserver
-                            </a>>
+                            </a>
 
                         </div>
                         <div class="frame-effect-rt rotate-rt reveal-1">
-                            <img class="block-img-scolaire" src="/assets/img/img_scolaire/sec/sec_visite_carriere.jpg" alt="animation secondaire 3">
+                            <img class="block-img-scolaire" src="<?= Path::getFile("/img/img_scolaire/sec/sec_visite_carriere.jpg"); ?>" alt="animation secondaire 3">
                         </div>
                     </div>
                     <hr class="hr1 my-5">
                     <!-- 2. Visite de la cimenterie -->
                     <div class="block-flex relative reveal" id="section-usine">
                         <div class="frame-effect-lt rotate-lt reveal-1">
-                            <img class="block-img-scolaire" src="/assets/img/img_scolaire/sec/sec_usine.jpg" alt="animation secondaire 1">
+                            <img class="block-img-scolaire" src="<?= Path::getFile("/img/img_scolaire/sec/sec_usine.jpg"); ?>" alt="animation secondaire 1">
                         </div>
                         <div class="mr90 bg-radial-effect">
                             <div class="block-scol-icon-container  reveal-2">
                                 <h2 class="block-title mb10 ml90 text-center reveal-2">Visite de la cimenterie Holcim</h2>
-                                <img src="/assets/img/icon/icon-scolaire/img-demi.png" class="img-demi-mr reveal-1" alt="formule 3h">
+                                <img src="<?= Path::getFile("/img/icon/icon-scolaire/img-demi.png"); ?>" class="img-demi-mr reveal-1" alt="formule 3h">
                                 <div class="scolaire-icon-flex reveal-2">
                                     <div title="Niveaux scolaire(s) concerné(s)" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon1.png" alt="class icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon1.png"); ?>" alt="class icon">
                                         <p class="scolaire-sub-item">S4 - S6</p>
                                     </div>
                                     <div title="Mininmum et Nombre maximum de participants" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon2.png" alt="min icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon2.png"); ?>" alt="min icon">
                                         <p class="scolaire-sub-item">20 élèves max.</p>
                                     </div>
                                     <div title="Durée de l'activité" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon3.png" alt="time icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon3.png"); ?>" alt="time icon">
                                         <p class="scolaire-sub-item">3h</p>
                                     </div>
                                     <div title="Activité intérieure et/ou extérieure" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon4.png" alt="int/ext icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon4.png"); ?>" alt="int/ext icon">
                                         <p class="scolaire-sub-item">ext.</p>
                                     </div>
                                 </div>
@@ -1065,9 +1065,9 @@
                                     Ensuite, plongez au cœur de la cimenterie d'Obourg, où vous serez témoin d'une série de procédés modernes qui orchestrent la naissance du ciment. Une demi-journée immersive qui mêle histoire, écologie et innovation industrielle.
                                 </p>
                             </div>
-                            <a class="button-main d-block reveal-4" href="/reservation">
+                            <a class="button-main d-block reveal-4" href="<?= Path::getUrl("/reservation"); ?>">
                                 Réserver
-                            </a>>
+                            </a>
                         </div>
                     </div>
                     <hr class="hr1 my-5">
@@ -1078,19 +1078,19 @@
                                 <h2 class="block-title mb10 text-center reveal-2">Polution et énergie durable</h2>
                                 <div class="scolaire-icon-flex reveal-2">
                                     <div title="Niveaux scolaire(s) concerné(s)" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon1.png" alt="class icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon1.png"); ?>" alt="class icon">
                                         <p class="scolaire-sub-item">S1 - S4</p>
                                     </div>
                                     <div title="Nombre maximum de participants" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon2.png" alt="min icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon2.png"); ?>" alt="min icon">
                                         <p class="scolaire-sub-item">45 élèves max.</p>
                                     </div>
                                     <div title="Durée de l'activité" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon3.png" alt="time icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon3.png"); ?>" alt="time icon">
                                         <p class="scolaire-sub-item">1h30</p>
                                     </div>
                                     <div title="Activité intérieure et/ou extérieure" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon4.png" alt="int/ext icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon4.png"); ?>" alt="int/ext icon">
                                         <p class="scolaire-sub-item">int./ext.</p>
                                     </div>
                                 </div>
@@ -1102,38 +1102,38 @@
                                 <p class="text-scolaire-resp">
                                     Ils comprendront leur fonctionnement et leur rôle crucial dans la lutte contre la pollution. </p>
                             </div>
-                            <a class="button-main d-block reveal-4" href="/reservation">
+                            <a class="button-main d-block reveal-4" href="<?= Path::getUrl("/reservation"); ?>">
                                 Réserver
-                            </a>>
+                            </a>
                         </div>
                         <div class="frame-effect-rt rotate-rt reveal-1">
-                            <img class="block-img-scolaire" src="/assets/img/img_scolaire/sec/sec_pollution.jpg" alt="animation secondaire 9">
+                            <img class="block-img-scolaire" src="<?= Path::getFile("/img/img_scolaire/sec/sec_pollution.jpg"); ?>" alt="animation secondaire 9">
                         </div>
                     </div>
                     <hr class="hr1 my-5">
                     <!-- 3. Expo biodiversité -->
                     <div class="block-flex reveal">
                         <div class="frame-effect-lt rotate-lt reveal-1">
-                            <img class="block-img-scolaire" src="/assets/img/img_scolaire/pri/pri1.jpg" alt="animation secondaire 2">
+                            <img class="block-img-scolaire" src="<?= Path::getFile("/img/img_scolaire/pri/pri1.jpg"); ?>" alt="animation secondaire 2">
                         </div>
                         <div class="mr90 bg-radial-effect">
                             <div class="block-scol-icon-container  reveal-2">
                                 <h2 class="block-title mb10 text-center reveal-2">Expo biodiversité</h2>
                                 <div class="scolaire-icon-flex reveal-2">
                                     <div title="Niveaux scolaire(s) concerné(s)" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon1.png" alt="class icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon1.png"); ?>" alt="class icon">
                                         <p class="scolaire-sub-item">S1 - S6 </p>
                                     </div>
                                     <div title="Nombre maximum de participants" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon2.png" alt="min icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon2.png"); ?>" alt="min icon">
                                         <p class="scolaire-sub-item">45 élèves max.</p>
                                     </div>
                                     <div title="Durée de l'activité" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon3.png" alt="time icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon3.png"); ?>" alt="time icon">
                                         <p class="scolaire-sub-item">1h30</p>
                                     </div>
                                     <div title="Activité intérieure et/ou extérieure" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon4.png" alt="int/ext icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon4.png"); ?>" alt="int/ext icon">
                                         <p class="scolaire-sub-item">int.</p>
                                     </div>
                                 </div>
@@ -1146,9 +1146,9 @@
                                     Les élèves seront ensuite invités à remplir un questionnaire qui ouvrira des débats sur la biodiversité et sa préservation. Cette exposition immersive a pour ambition d'éveiller l'esprit critique des élèves.
                                 </p>
                             </div>
-                            <a class="button-main d-block reveal-4" href="/reservation">
+                            <a class="button-main d-block reveal-4" href="<?= Path::getUrl("/reservation"); ?>">
                                 Réserver
-                            </a>>
+                            </a>
                         </div>
                     </div>
                     <hr class="hr1 my-5">
@@ -1157,22 +1157,22 @@
                         <div class="ml90 bg-radial-effect">
                             <div class="block-scol-icon-container reveal-2">
                                 <h2 class="block-title mb10 text-center reveal-2" id="demi-biologie">Biologie végétale</h2>
-                                <img src="/assets/img/icon/icon-scolaire/img-demi.png" class="img-demi-ml reveal-1" alt="formule 3h">
+                                <img src="<?= Path::getFile("/img/icon/icon-scolaire/img-demi.png"); ?>" class="img-demi-ml reveal-1" alt="formule 3h">
                                 <div class="scolaire-icon-flex reveal-2">
                                     <div title="Niveaux scolaire(s) concerné(s)" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon1.png" alt="class icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon1.png"); ?>" alt="class icon">
                                         <p class="scolaire-sub-item">S1 - S6</p>
                                     </div>
                                     <div title="Mininmum et Nombre maximum de participants" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon2.png" alt="min icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon2.png"); ?>" alt="min icon">
                                         <p class="scolaire-sub-item">20 élèves max.</p>
                                     </div>
                                     <div title="Durée de l'activité" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon3.png" alt="time icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon3.png"); ?>" alt="time icon">
                                         <p class="scolaire-sub-item">3h</p>
                                     </div>
                                     <div title="Activité intérieure et/ou extérieure" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon4.png" alt="int/ext icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon4.png"); ?>" alt="int/ext icon">
                                         <p class="scolaire-sub-item">ext./int.</p>
                                     </div>
                                 </div>
@@ -1185,39 +1185,39 @@
                                     Cette demi-journée offre une opportunité d'appréhender la diversité végétale, ainsi que les relations entre les êtres vivants et leur environnement, offrant un aperçu captivant des dynamiques vitales qui façonnent notre planète.
                                 </p>
                             </div>
-                            <a class="button-main d-block reveal-4" href="/reservation">
+                            <a class="button-main d-block reveal-4" href="<?= Path::getUrl("/reservation"); ?>">
                                 Réserver
                             </a>
 
                         </div>
                         <div class="frame-effect-rt rotate-rt reveal-1">
-                            <img class="block-img-scolaire" src="/assets/img/img_scolaire/sec/sec_bota.jpg" alt="animation secondaire 9">
+                            <img class="block-img-scolaire" src="<?= Path::getFile("/img/img_scolaire/sec/sec_bota.jpg"); ?>" alt="animation secondaire 9">
                         </div>
                     </div>
                     <hr class="hr1 my-5">
                     <!-- 5 Interactions au sein d'un écosystème -->
                     <div class="block-flex reveal">
                         <div class="frame-effect-lt rotate-lt reveal-1">
-                            <img class="block-img-scolaire" src="/assets/img/img_scolaire/sec/sec_interaction.jpg" alt="animation primaires 6">
+                            <img class="block-img-scolaire" src="<?= Path::getFile("/img/img_scolaire/sec/sec_interaction.jpg"); ?>" alt="animation primaires 6">
                         </div>
                         <div class="mr90 bg-radial-effect">
                             <div class="block-scol-icon-container  reveal-2">
                                 <h2 class="block-title mb10 text-center reveal-2">Interactions au sein d'un écosystème</h2>
                                 <div class="scolaire-icon-flex reveal-2">
                                     <div title="Niveaux scolaire(s) concerné(s)" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon1.png" alt="class icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon1.png"); ?>" alt="class icon">
                                         <p class="scolaire-sub-item">S1 - S6</p>
                                     </div>
                                     <div title="Nombre maximum de participants" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon2.png" alt="min icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon2.png"); ?>" alt="min icon">
                                         <p class="scolaire-sub-item">45 élèves max.</p>
                                     </div>
                                     <div title="Durée de l'activité" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon3.png" alt="time icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon3.png"); ?>" alt="time icon">
                                         <p class="scolaire-sub-item">1h30</p>
                                     </div>
                                     <div title="Activité intérieure et/ou extérieure" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon4.png" alt="int/ext icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon4.png"); ?>" alt="int/ext icon">
                                         <p class="scolaire-sub-item">int.</p>
                                     </div>
                                 </div>
@@ -1227,7 +1227,7 @@
                                     Cette activité met en lumière la fragilité de nos écosystèmes et explore les différentes interactions complexes qui les animent. Plongez dans une aventure où vous apprendrez l'importance cruciale de préserver ces équilibres délicats pour un avenir durable.
                                 </p>
                             </div>
-                            <a class="button-main d-block reveal-4" href="/reservation">
+                            <a class="button-main d-block reveal-4" href="<?= Path::getUrl("/reservation"); ?>">
                                 Réserver
                             </a>
                         </div>
@@ -1240,19 +1240,19 @@
                                 <h2 class="block-title mb10 text-center reveal-2">Notion de développement durable</h2>
                                 <div class="scolaire-icon-flex reveal-2">
                                     <div title="Niveaux scolaire(s) concerné(s)" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon1.png" alt="class icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon1.png"); ?>" alt="class icon">
                                         <p class="scolaire-sub-item">S1 - S2</p>
                                     </div>
                                     <div title="Nombre maximum de participants" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon2.png" alt="min icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon2.png"); ?>" alt="min icon">
                                         <p class="scolaire-sub-item">45 élèves max.</p>
                                     </div>
                                     <div title="Durée de l'activité" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon3.png" alt="time icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon3.png"); ?>" alt="time icon">
                                         <p class="scolaire-sub-item">1h30</p>
                                     </div>
                                     <div title="Activité intérieure et/ou extérieure" class="block-scolaire-item-img">
-                                        <img src="/assets/img/icon/icon-scolaire/icon4.png" alt="int/ext icon">
+                                        <img src="<?= Path::getFile("/img/icon/icon-scolaire/icon4.png"); ?>" alt="int/ext icon">
                                         <p class="scolaire-sub-item">int.</p>
                                     </div>
                                 </div>
@@ -1265,12 +1265,12 @@
                                     Cette activité dynamique allie un apport de connaissances sur ce concept, des jeux interactifs captivants et des débats stimulants.
                                 </p>
                             </div>
-                            <a class="button-main d-block reveal-4" href="/reservation">
+                            <a class="button-main d-block reveal-4" href="<?= Path::getUrl("/reservation"); ?>">
                                 Réserver
                             </a>
                         </div>
                         <div class="frame-effect-rt rotate-rt reveal-1">
-                            <img class="block-img-scolaire" src="/assets/img/img_scolaire/sec/sec_DD.jpg" alt="animation secondaire 9">
+                            <img class="block-img-scolaire" src="<?= Path::getFile("/img/img_scolaire/sec/sec_DD.jpg"); ?>" alt="animation secondaire 9">
                         </div>
                     </div>
                 </div>
@@ -1279,5 +1279,5 @@
     </div>
 </section>
 
-<script src="/assets/js/filter_scolaire.js"></script>
+<script src="<?= Path::getFile("/js/filter_scolaire.js"); ?>"></script>
 

@@ -17,11 +17,11 @@
             <div class="carousel slide carousel-fade carousel-max carousel-max-height carousel-resp-reservation" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img class="d-block w-100" src="/assets/img/img_carousel/reservation/slide1.jpg" alt="slide 1">
+                        <img class="d-block w-100" src="<?= Path::getFile("/img/img_carousel/reservation/slide1.jpg"); ?>" alt="slide 1">
                     </div>
                     <?php
                     for ($i = 2; $i < 7; $i++) {
-                        echo '<div class="carousel-item"><img class="d-block w-100" src="/assets/img/img_carousel/reservation/slide' . $i . '.jpg" alt="slide ' . $i . '">
+                        echo '<div class="carousel-item"><img class="d-block w-100" src=" '. Path::getFile("/img/img_carousel/reservation/slide$i.jpg").'" alt="slide ' . $i . '">
                             </div>';
                     }
                     ?>
@@ -71,7 +71,7 @@
                     <tr>
                         <th class="th-tarif no-bg no-border"></th>
                         <th class="th-tarif">Demi-journée <sup>
-                                <a href="javascript:;" data-toggle="tooltip" title="1 demi-journée = 3h d'activités"><img src="/assets/img/icon/question.png" width="12" alt="tooltip"></a></sup></th>
+                                <a href="javascript:;" data-toggle="tooltip" title="1 demi-journée = 3h d'activités"><img src="<?= Path::getFile("/img/icon/question.png"); ?>" width="12" alt="tooltip"></a></sup></th>
                         <th class="th-tarif">Journée</th>
                     </tr>
                     <tr>
@@ -129,7 +129,7 @@
                     <tr>
                         <th class="th-tarif no-bg no-border"></th>
                         <th class="th-tarif">Samedi ou Dimanche<sup>
-                                <a href="javascript:;" data-toggle="tooltip" title="Voir les dates disponibles ci-dessous"><img src="/assets/img/icon/question.png" width="12" alt="tooltip"></a></sup></th>
+                                <a href="javascript:;" data-toggle="tooltip" title="Voir les dates disponibles ci-dessous"><img src="<?= Path::getFile("/img/icon/question.png"); ?>" width="12" alt="tooltip"></a></sup></th>
                     </tr>
                     <tr>
                         <td class="td-tarif">Adulte</td>
@@ -146,7 +146,7 @@
                     <tr>
                         <th class="th-tarif no-bg no-border"></th>
                         <th class="th-tarif">Vacances scolaires<sup>
-                                <a href="javascript:;" data-toggle="tooltip" title="Stages disponibles ci-dessous"><img src="/assets/img/icon/question.png" width="12" alt="tooltip"></a></sup></th>
+                                <a href="javascript:;" data-toggle="tooltip" title="Stages disponibles ci-dessous"><img src="<?= Path::getFile("/img/icon/question.png"); ?>" width="12" alt="tooltip"></a></sup></th>
                     </tr>
                     <tr>
                         <td class="td-tarif">Enfant (8-12ans)</td>
@@ -163,7 +163,7 @@
                     <tr>
                         <th class="th-tarif no-bg no-border"></th>
                         <th class="th-tarif" colspan="2">Mercredi (14-17h) <sup>
-                                <a href="javascript:;" data-toggle="tooltip" title="Anniversaire organisé exclusivement le mercredi après-midi"><img src="/assets/img/icon/question.png" width="12" alt="tooltip"></a></sup></th>
+                                <a href="javascript:;" data-toggle="tooltip" title="Anniversaire organisé exclusivement le mercredi après-midi"><img src="<?= Path::getFile("/img/icon/question.png"); ?>" width="12" alt="tooltip"></a></sup></th>
                     </tr>
                     <tr>
                         <th class="th-tarif">Activités</th>
@@ -199,7 +199,7 @@
                     <tr>
                         <th class="th-tarif no-bg no-border"></th>
                         <th class="th-tarif">Demi-journée<sup>
-                                <a href="javascript:;" data-toggle="tooltip" title="1 demi-journée correspond à 3h de location"><img src="/assets/img/icon/question.png" width="12" alt="tooltip"></a></sup></th>
+                                <a href="javascript:;" data-toggle="tooltip" title="1 demi-journée correspond à 3h de location"><img src="<?= Path::getFile("/img/icon/question.png"); ?>" width="12" alt="tooltip"></a></sup></th>
                         <th class="th-tarif">Journée<sup>
                                 <a href="javascript:;" data-toggle="tooltip" title="1 journée correspond à 2 x 3h de location"><img /assets/img/icon/question.png" width="12" alt="tooltip"></a></sup></th>
                     </tr>
@@ -281,7 +281,7 @@
                                         </div>
                                         <div class="button-flex">
                                             <button type="button" id="boutonSuivant1mat" class="button-main button-next">
-                                                <img class="next-prev-icon" src="/assets/img/icon/next.png" alt="next">
+                                                <img class="next-prev-icon" src="<?= Path::getFile("/img/icon/next.png"); ?>" alt="next">
                                             </button>
                                         </div>
                                     </div>
@@ -341,17 +341,17 @@
                                             <div class="col-md-3 hidden-resp">
                                                 <div class="form-group">
                                                     <label class="form-label" for="prixTotal">Prix total</label><sup>
-                                                        <a href="javascript:;" data-toggle="tooltip" title="Coût indicatif, vous n'avez rien à payer lors d'une demande de réservation"><img src="/assets/img/icon/question.png" width="12" alt="tooltip"></a></sup>
+                                                        <a href="javascript:;" data-toggle="tooltip" title="Coût indicatif, vous n'avez rien à payer lors d'une demande de réservation"><img src="<?= Path::getFile("/img/icon/question.png"); ?>" width="12" alt="tooltip"></a></sup>
                                                     <input type="text" id="prixTotal" name="prixTotal" class="form-control disabled" readonly>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="button-flex">
                                             <button type="button" id="boutonPrecedent2mat" class="button-main button-prev">
-                                                <img class="next-prev-icon" src="/assets/img/icon/prev.png" alt="précédent">
+                                                <img class="next-prev-icon" src="<?= Path::getFile("/img/icon/prev.png"); ?>" alt="précédent">
                                             </button>
                                             <button type="button" id="boutonSuivant2mat" class="button-main button-next">
-                                                <img class="next-prev-icon" src="/assets/img/icon/next.png" alt="suivant">
+                                                <img class="next-prev-icon" src="<?= Path::getFile("/img/icon/next.png"); ?>" alt="suivant">
                                             </button>
                                         </div>
                                     </div>
@@ -417,12 +417,12 @@
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <input type="checkbox" name="CGS" class="CGs required-field-input" id="CGs_mat" required>
-                                                <label class="form-label required-field label-CG" for="CGs_mat" value="conditions générales"> Lire et accepter les <a href="/conditions-generales.html" target="_blank">conditions générales</a>.</label>
+                                                <label class="form-label required-field label-CG" for="CGs_mat" value="conditions générales"> Lire et accepter les <a href="<?= Path::getUrl("/conditions-generales.html"); ?>" target="_blank">conditions générales</a>.</label>
                                             </div>
                                         </div>
                                         <div class="button-flex">
                                             <button type="button" id="boutonPrecedent3mat" class="button-main button-prev">
-                                                <img class="next-prev-icon" src="/assets/img/icon/prev.png" alt="précédent">
+                                                <img class="next-prev-icon" src="<?= Path::getFile("/img/icon/prev.png"); ?>" alt="précédent">
                                             </button>
                                             <input type="submit" title="Envoyer" value="Envoyer" class="button-main button-submit-resp">
                                             <button type="button" class="button-secondary no-border" data-dismiss="modal">Fermer</button>
@@ -482,7 +482,7 @@
                                         </div>
                                         <div class="boutton-flex">
                                             <button type="button" id="boutonSuivant1pri" class="button-main button-next">
-                                                <img class="next-prev-icon" src="/assets/img/icon/next.png" alt="suivant">
+                                                <img class="next-prev-icon" src="<?= Path::getFile("/img/icon/next.png"); ?>" alt="suivant">
                                             </button>
                                         </div>
                                     </div>
@@ -565,17 +565,17 @@
                                             <div class="col-md-3 hidden-resp">
                                                 <div class="form-group">
                                                     <label class="form-label" for="prixTotal_pri">Prix total</label><sup>
-                                                        <a href="javascript:;" data-toggle="tooltip" title="Coût indicatif, vous n'avez rien à payer lors d'une demande de réservation"><img src="/assets/img/icon/question.png" width="12" alt="tooltip"></a></sup>
+                                                        <a href="javascript:;" data-toggle="tooltip" title="Coût indicatif, vous n'avez rien à payer lors d'une demande de réservation"><img src="<?= Path::getFile("/img/icon/question.png"); ?>" width="12" alt="tooltip"></a></sup>
                                                     <input type="text" id="prixTotal_pri" name="prixTotal_pri" class="form-control disabled" readonly>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="button-flex">
                                             <button type="button" id="boutonPrecedent2pri" class="button-main button-prev">
-                                                <img class="next-prev-icon" src="/assets/img/icon/prev.png" alt="précédent">
+                                                <img class="next-prev-icon" src="<?= Path::getFile("/img/icon/prev.png"); ?>" alt="précédent">
                                             </button>
                                             <button type="button" id="boutonSuivant2pri" class="button-main button-next">
-                                                <img class="next-prev-icon" src="/assets/img/icon/next.png" alt="suivant">
+                                                <img class="next-prev-icon" src="<?= Path::getFile("/img/icon/next.png"); ?>" alt="suivant">
                                             </button>
                                         </div>
                                     </div>
@@ -701,12 +701,12 @@
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <input type="checkbox" name="CGS" class="CGs required-field-input" id="CGs_pri" required>
-                                                <label class="form-label required-field label-CG" for="CGs_pri" value="conditions générales"> Lire et accepter les <a href="/conditions-generales.html" target="_blank">conditions générales</a>.</label>
+                                                <label class="form-label required-field label-CG" for="CGs_pri" value="conditions générales"> Lire et accepter les <a href="<?= Path::getUrl("/conditions-generales.html"); ?>" target="_blank">conditions générales</a>.</label>
                                             </div>
                                         </div>
                                         <div class="button-flex">
                                             <button type="button" id="boutonPrecedent3pri" class="button-main button-prev">
-                                                <img class="next-prev-icon" src="/assets/img/icon/prev.png" alt="précédent">
+                                                <img class="next-prev-icon" src="<?= Path::getFile("/img/icon/prev.png"); ?>" alt="précédent">
                                             </button>
                                             <input type="submit" title="Envoyer" value="Envoyer" class="button-main button-submit-resp">
                                             <button type="button" class="button-secondary no-border" data-dismiss="modal">Fermer</button>
@@ -766,7 +766,7 @@
                                         </div>
                                         <div class="button-flex">
                                             <button type="button" id="boutonSuivant1sec" class="button-main button-next">
-                                                <img class="next-prev-icon" src="/assets/img/icon/next.png" alt="next">
+                                                <img class="next-prev-icon" src="<?= Path::getFile("/img/icon/next.png"); ?>" alt="next">
                                             </button>
                                         </div>
                                     </div>
@@ -850,17 +850,17 @@
                                             <div class="col-md-3 hidden-resp">
                                                 <div class="form-group">
                                                     <label class="form-label" for="prixTotal_sec">Prix total</label><sup>
-                                                        <a href="javascript:;" data-toggle="tooltip" title="Coût indicatif, vous n'avez rien à payer lors d'une demande de réservation"><img src="/assets/img/icon/question.png" width="12" alt="tooltip"></a></sup>
+                                                        <a href="javascript:;" data-toggle="tooltip" title="Coût indicatif, vous n'avez rien à payer lors d'une demande de réservation"><img src="<?= Path::getFile("/img/icon/question.png"); ?>" width="12" alt="tooltip"></a></sup>
                                                     <input type="text" id="prixTotal_sec" name="prixTotal_sec" class="form-control disabled" readonly>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="button-flex">
                                             <button type="button" id="boutonPrecedent2sec" class="button-main button-prev">
-                                                <img class="next-prev-icon" src="/assets/img/icon/prev.png" alt="précédent">
+                                                <img class="next-prev-icon" src="<?= Path::getFile("/img/icon/prev.png"); ?>" alt="précédent">
                                             </button>
                                             <button type="button" id="boutonSuivant2sec" class="button-main button-next">
-                                                <img class="next-prev-icon" src="/assets/img/icon/next.png" alt="suivant">
+                                                <img class="next-prev-icon" src="<?= Path::getFile("/img/icon/next.png"); ?>" alt="suivant">
                                             </button>
                                         </div>
                                     </div>
@@ -962,12 +962,12 @@
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <input type="checkbox" name="CGS" class="CGs required-field-input" id="CGs_sec" required>
-                                                <label class="form-label required-field label-CG" for="CGs_sec" value="conditions générales"> Lire et accepter les <a href="/conditions-generales.html" target="_blank">conditions générales</a>.</label>
+                                                <label class="form-label required-field label-CG" for="CGs_sec" value="conditions générales"> Lire et accepter les <a href="<?= Path::getUrl("/conditions-generales.html"); ?>" target="_blank">conditions générales</a>.</label>
                                             </div>
                                         </div>
                                         <div class="button-flex">
                                             <button type="button" id="boutonPrecedent3sec" class="button-main button-prev">
-                                                <img class="next-prev-icon" src="/assets/img/icon/prev.png" alt="précédent">
+                                                <img class="next-prev-icon" src="<?= Path::getFile("/img/icon/prev.png"); ?>" alt="précédent">
                                             </button>
                                             <input type="submit" title="Envoyer" value="Envoyer" class="button-main button-submit-resp">
                                             <button type="button" class="button-secondary no-border" data-dismiss="modal">Fermer</button>
@@ -1027,7 +1027,7 @@
                                         </div>
                                         <div class="button-flex">
                                             <button type="button" id="boutonSuivant1vis" class="button-main button-next">
-                                                <img class="next-prev-icon" src="/assets/img/icon/next.png" alt="suivant">
+                                                <img class="next-prev-icon" src="<?= Path::getFile("/img/icon/next.png"); ?>" alt="suivant">
                                             </button>
                                         </div>
                                     </div>
@@ -1046,21 +1046,21 @@
                                             <div class="col-md-3 col-4">
                                                 <div class="form-group">
                                                     <label class="form-label required-field" for="number_visit_ado">Ado(s)</label><sup>
-                                                        <a href="javascript:;" data-toggle="tooltip" title="(12 à 18 ans)"><img src="/assets/img/icon/question.png" width="12" alt="tooltip"></a></sup>
+                                                        <a href="javascript:;" data-toggle="tooltip" title="(12 à 18 ans)"><img src="<?= Path::getFile("/img/icon/question.png"); ?>" width="12" alt="tooltip"></a></sup>
                                                     <input type="number" class="form-control" id="number_visit_ado" name="number_visit_ado" value="0" min="0" required onchange="calculerPrixTotalvisit()">
                                                 </div>
                                             </div>
                                             <div class="col-md-3 col-4">
                                                 <div class="form-group">
                                                     <label class="form-label required-field" for="number_visit_enfant">Enfant(s)</label><sup>
-                                                        <a href="javascript:;" data-toggle="tooltip" title="(- de 12 ans)"><img src="/assets/img/icon/question.png" width="12" alt="tooltip"></a></sup>
+                                                        <a href="javascript:;" data-toggle="tooltip" title="(- de 12 ans)"><img src="<?= Path::getFile("/img/icon/question.png"); ?>" width="12" alt="tooltip"></a></sup>
                                                     <input type="number" class="form-control" id="number_visit_enfant" name="number_visit_enfant" value="0" min="0" required>
                                                 </div>
                                             </div>
                                             <div class="col-md-3 hidden-resp">
                                                 <div class="form-group">
                                                     <label class="form-label" for="prixTotal_visit">Prix total</label><sup>
-                                                        <a href="javascript:;" data-toggle="tooltip" title="Coût indicatif, vous n'avez rien à payer lors d'une demande de réservation"><img src="/assets/img/icon/question.png" width="12" alt="tooltip"></a></sup>
+                                                        <a href="javascript:;" data-toggle="tooltip" title="Coût indicatif, vous n'avez rien à payer lors d'une demande de réservation"><img src="<?= Path::getFile("/img/icon/question.png"); ?>" width="12" alt="tooltip"></a></sup>
                                                     <input type="text" id="prixTotal_visit" name="prixTotal_visit" class="form-control disabled" readonly>
                                                 </div>
                                             </div>
@@ -1100,12 +1100,12 @@
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <input type="checkbox" name="CGS" class="CGs required-field-input" id="CGs_vis" required>
-                                                <label class="form-label required-field label-CG" for="CGs_vis" value="conditions générales"> Lire et accepter les <a href="/conditions-generales.html" target="_blank">conditions générales</a>.</label>
+                                                <label class="form-label required-field label-CG" for="CGs_vis" value="conditions générales"> Lire et accepter les <a href="<?= Path::getUrl("/conditions-generales.html"); ?>" target="_blank">conditions générales</a>.</label>
                                             </div>
                                         </div>
                                         <div class="button-flex">
                                             <button type="button" id="boutonPrecedent3vis" class="button-main button-prev">
-                                                <img class="next-prev-icon" src="/assets/img/icon/prev.png" alt="précédent">
+                                                <img class="next-prev-icon" src="<?= Path::getFile("/img/icon/prev.png"); ?>" alt="précédent">
                                             </button>
                                             <input type="submit" title="Envoyer" value="Envoyer" class="button-main button-submit-resp">
                                             <button type="button" class="button-secondary no-border" data-dismiss="modal">Fermer</button>
@@ -1164,7 +1164,7 @@
                                             </div>
                                         </div>
                                         <button type="button" id="boutonSuivant1CN" class="button-main button-next">
-                                            <img class="next-prev-icon" src="/assets/img/icon/next.png" alt="suivant">
+                                            <img class="next-prev-icon" src="<?= Path::getFile("/img/icon/next.png"); ?>" alt="suivant">
                                         </button>
                                     </div>
                                     <div id="div2CN" class="hidden">
@@ -1222,7 +1222,7 @@
                                             <div class="col-md-4 col-6">
                                                 <div class="form-group">
                                                     <label class="form-label required-field" for="garderie_AM">Garderie (matin)<sup>
-                                                            <a href="javascript:;" data-toggle="tooltip" title="Garderie gratuite de 7h30 à 9h (inscription obligatoire)"><img src="/assets/img/icon/question.png" width="12" alt="tooltip"></a></sup></label>
+                                                            <a href="javascript:;" data-toggle="tooltip" title="Garderie gratuite de 7h30 à 9h (inscription obligatoire)"><img src="<?= Path::getFile("/img/icon/question.png"); ?>" width="12" alt="tooltip"></a></sup></label>
                                                     <select class="form-select" id="garderie_AM" name="garderie_AM">
                                                         <option value="Garderie Oui">Oui</option>
                                                         <option value="Garderie Non">Non</option>
@@ -1232,7 +1232,7 @@
                                             <div class="col-md-4 col-6">
                                                 <div class="form-group">
                                                     <label class="form-label required-field" for="garderie_PM">Garderie (soir)<sup>
-                                                            <a href="javascript:;" data-toggle="tooltip" title="Garderie gratuite de 16h à 17h (inscription obligatoire)"><img src="/assets/img/icon/question.png" width="12" alt="tooltip"></a></sup></label>
+                                                            <a href="javascript:;" data-toggle="tooltip" title="Garderie gratuite de 16h à 17h (inscription obligatoire)"><img src="<?= Path::getFile("/img/icon/question.png"); ?>" width="12" alt="tooltip"></a></sup></label>
                                                     <select class="form-select" id="garderie_PM" name="garderie_PM">
                                                         <option value="Garderie Oui">Oui</option>
                                                         <option value="Garderie Non">Non</option>
@@ -1249,12 +1249,12 @@
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <input type="checkbox" name="CGS" class="CGs required-field-input" id="CGs_CN" required>
-                                                <label class="form-label required-field label-CG" for="CGs_CN" value="conditions générales"> Lire et accepter les <a href="/conditions-generales.html" target="_blank">conditions générales</a>.</label>
+                                                <label class="form-label required-field label-CG" for="CGs_CN" value="conditions générales"> Lire et accepter les <a href="<?= Path::getUrl("/conditions-generales.html"); ?>" target="_blank">conditions générales</a>.</label>
                                             </div>
                                         </div>
                                         <div class="button-flex">
                                             <button type="button" id="boutonPrecedent3CN" class="button-main button-prev">
-                                                <img class="next-prev-icon" src="/assets/img/icon/prev.png" alt="précédent">
+                                                <img class="next-prev-icon" src="<?= Path::getFile("/img/icon/prev.png"); ?>" alt="précédent">
                                             </button>
                                             <input type="submit" title="Envoyer" value="Envoyer" class="button-main button-submit-resp">
                                             <button type="button" class="button-secondary no-border" data-dismiss="modal">Fermer</button>
@@ -1314,7 +1314,7 @@
                                         </div>
                                         <div class="button-flex">
                                             <button type="button" id="boutonSuivant1anniv" class="button-main button-next">
-                                                <img class="next-prev-icon" src="/assets/img/icon/next.png" alt="suivant">
+                                                <img class="next-prev-icon" src="<?= Path::getFile("/img/icon/next.png"); ?>" alt="suivant">
                                             </button>
                                         </div>
                                     </div>
@@ -1382,7 +1382,7 @@
                                             <div class="col-md-3 hidden-resp">
                                                 <div class="form-group">
                                                     <label class="form-label" for="prixTotal_anniv">Prix total</label><sup>
-                                                        <a href="javascript:;" data-toggle="tooltip" title="Coût indicatif, vous n'avez rien à payer lors d'une demande de réservation"><img src="/assets/img/icon/question.png" width="12" alt="tooltip"></a></sup>
+                                                        <a href="javascript:;" data-toggle="tooltip" title="Coût indicatif, vous n'avez rien à payer lors d'une demande de réservation"><img src="<?= Path::getFile("/img/icon/question.png"); ?>" width="12" alt="tooltip"></a></sup>
                                                     <input type="text" id="prixTotal_anniv" name="prixTotal_anniv" class="form-control disabled" readonly>
                                                 </div>
                                             </div>
@@ -1396,12 +1396,12 @@
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <input type="checkbox" name="CGS" class="CGs required-field-input" id="CGs_anniv" required>
-                                                <label class="form-label required-field label-CG" for="CGs_anniv" value="conditions générales"> Lire et accepter les <a href="/conditions-generales.html" target="_blank">conditions générales</a>.</label>
+                                                <label class="form-label required-field label-CG" for="CGs_anniv" value="conditions générales"> Lire et accepter les <a href="<?= Path::getUrl("/conditions-generales.html"); ?>" target="_blank">conditions générales</a>.</label>
                                             </div>
                                         </div>
                                         <div class="button-flex">
                                             <button type="button" id="boutonPrecedent3anniv" class="button-main button-prev">
-                                                <img class="next-prev-icon" src="/assets/img/icon/prev.png" alt="précédent">
+                                                <img class="next-prev-icon" src="<?= Path::getFile("/img/icon/prev.png"); ?>" alt="précédent">
                                             </button>
                                             <input type="submit" title="Envoyer" value="Envoyer" class="button-main button-submit-resp">
                                             <button type="button" class="button-secondary no-border" data-dismiss="modal">Fermer</button>
@@ -1462,7 +1462,7 @@
                                         </div>
                                         <div class="button-flex">
                                             <button type="button" id="boutonSuivant1loc" class="button-main button-next">
-                                                <img class="next-prev-icon" src="/assets/img/icon/next.png" alt="suivant">
+                                                <img class="next-prev-icon" src="<?= Path::getFile("/img/icon/next.png"); ?>" alt="suivant">
                                             </button>
                                         </div>
                                     </div>
@@ -1531,10 +1531,10 @@
                                         </div>
                                         <div class="button-flex">
                                             <button type="button" id="boutonPrecedent2loc" class="button-main button-prev">
-                                                <img class="next-prev-icon" src="/assets/img/icon/prev.png" alt="précédent">
+                                                <img class="next-prev-icon" src="<?= Path::getFile("/img/icon/prev.png"); ?>" alt="précédent">
                                             </button>
                                             <button type="button" id="boutonSuivant2loc" class="button-main button-next">
-                                                <img class="next-prev-icon" src="/assets/img/icon/next.png" alt="suivant">
+                                                <img class="next-prev-icon" src="<?= Path::getFile("/img/icon/next.png"); ?>" alt="suivant">
                                             </button>
                                         </div>
                                     </div>
@@ -1547,7 +1547,7 @@
                                             <div class="col-md-5">
                                                 <div class="form-group" id="supp-1">
                                                     <label class="form-label" for="supp_location2">Supplément (visite guidée)<sup>
-                                                            <a href="javascript:;" data-toggle="tooltip" title="Visite guidée des anciennes carrières d'Obourg réhabilitées"><img src="/assets/img/icon/question.png" width="12" alt="tooltip"></a></sup></label>
+                                                            <a href="javascript:;" data-toggle="tooltip" title="Visite guidée des anciennes carrières d'Obourg réhabilitées"><img src="<?= Path::getFile("/img/icon/question.png"); ?>" width="12" alt="tooltip"></a></sup></label>
                                                     <select class="form-select" name="supp_location2" id="supp_location2">
                                                         <option selected value="pas de visite" selected>Ne pas inclure une visite</option>
                                                         <option value="inclure visite">Inclure une visite</option>
@@ -1579,7 +1579,7 @@
                                             <div class="col-md-3 hidden-resp">
                                                 <div class="form-group">
                                                     <label class="form-label" for="prixTotal_location">Prix total</label><sup>
-                                                        <a href="javascript:;" data-toggle="tooltip" title="Coût indicatif, vous n'avez rien à payer lors d'une demande de réservation"><img src="/assets/img/icon/question.png" width="12" alt="tooltip"></a></sup>
+                                                        <a href="javascript:;" data-toggle="tooltip" title="Coût indicatif, vous n'avez rien à payer lors d'une demande de réservation"><img src="<?= Path::getFile("/img/icon/question.png"); ?>" width="12" alt="tooltip"></a></sup>
                                                     <input type="text" id="prixTotal_location" name="prixTotal_location" class="form-control disabled" readonly>
                                                 </div>
                                             </div>
@@ -1594,12 +1594,12 @@
                                         <div class="row">
                                             <div class="col-md-12">
                                                 <input type="checkbox" name="CGS" class="CGs required-field-input" id="CGs_location" required>
-                                                <label class="form-label required-field label-CG" for="CGs_location" value="conditions générales"> Lire et accepter les <a href="/conditions-generales.html" target="_blank">conditions générales</a>.</label>
+                                                <label class="form-label required-field label-CG" for="CGs_location" value="conditions générales"> Lire et accepter les <a href="<?= Path::getUrl("/conditions-generales.html"); ?>" target="_blank">conditions générales</a>.</label>
                                             </div>
                                         </div>
                                         <div class="button-flex">
                                             <button type="button" id="boutonPrecedent3loc" class="button-main button-prev">
-                                                <img class="next-prev-icon" src="/assets/img/icon/prev.png" alt="précédent">
+                                                <img class="next-prev-icon" src="<?= Path::getFile("/img/icon/prev.png"); ?>" alt="précédent">
                                             </button>
                                             <input type="submit" title="Envoyer" value="Envoyer" class="button-main button-submit-resp">
                                             <button type="button" class="button-secondary no-border" data-dismiss="modal">Fermer</button>
@@ -1615,10 +1615,10 @@
     </div>
 </section>
 
-<script src="/assets/js/reservation_setting.js"></script>
-<script src="/assets/js/error_setting.js"></script>
-<script src="/assets/js/mat_setting.js"></script>
-<script src="/assets/js/pri_setting.js"></script>
-<script src="/assets/js/sec_setting.js"></script>
-<script src="/assets/js/price_calcul_setting.js"></script>
-<script src="/assets/js/dates_reservation.js"></script>
+<script src="<?= Path::getFile("/js/reservation_setting.js"); ?>"></script>
+<script src="<?= Path::getFile("/js/error_setting.js"); ?>"></script>
+<script src="<?= Path::getFile("/js/mat_setting.js"); ?>"></script>
+<script src="<?= Path::getFile("/js/pri_setting.js"); ?>"></script>
+<script src="<?= Path::getFile("/js/sec_setting.js"); ?>"></script>
+<script src="<?= Path::getFile("/js/price_calcul_setting.js"); ?>"></script>
+<script src="<?= Path::getFile("/js/dates_reservation.js"); ?>"></script>

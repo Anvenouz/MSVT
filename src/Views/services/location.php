@@ -7,11 +7,11 @@
                 <div class="carousel slide carousel-fade carousel-max" data-ride="carousel">
                     <div class="carousel-inner block-location-img">
                         <div class="carousel-item active">
-                            <img class="d-block w-100" src="/assets/img/img_carousel/location/slide1.jpg" alt="slide 1">
+                            <img class="d-block w-100" src="<?= Path::getFile("/img/img_carousel/location/slide1.jpg"); ?>" alt="slide 1">
                         </div>
                         <?php
                         for ($i = 2; $i < 8; $i++) {
-                            echo '<div class="carousel-item"><img class="d-block w-100" src="/assets/img/img_carousel/location/slide' . $i . '.jpg" alt="slide ' . $i . '">
+                            echo '<div class="carousel-item"><img class="d-block w-100" src=" '. Path::getFile("/img/img_carousel/location/slide$i.jpg").'" alt="slide ' . $i . '">
                             </div>';
                         }
                         ?>
@@ -114,7 +114,7 @@
                                         <tr>
                                             <td class="td-tarif" rowspan="3">Suppléments (casse-croute)</td>
                                             <td class="td-tarif">Sandwichs<sup>
-                                                    <a href="javascript:;" data-toggle="tooltip" title="Plusieurs sortes de sandwichs garnis"><img src="/assets/img/icon/question.png" width="12" alt="tooltip"></a></sup></td>
+                                                    <a href="javascript:;" data-toggle="tooltip" title="Plusieurs sortes de sandwichs garnis"><img src="<?= Path::getFile("/img/icon/question.png"); ?>" width="12" alt="tooltip"></a></sup></td>
                                             <td class="td-tarif">6€ / pers.</td>
                                         </tr>
                                         <tr>
@@ -127,7 +127,7 @@
                                         </tr>
                                         <tr>
                                             <td class="td-tarif" rowspan="2">Supplément (visite guidée)<sup>
-                                                    <a href="javascript:;" data-toggle="tooltip" title="Visite guidée dans anciennes carrières. Groupe de 15 maximum"><img src="/assets/img/icon/question.png" width="12" alt="tooltip"></a></sup></td>
+                                                    <a href="javascript:;" data-toggle="tooltip" title="Visite guidée dans anciennes carrières. Groupe de 15 maximum"><img src="<?= Path::getFile("/img/icon/question.png"); ?>" width="12" alt="tooltip"></a></sup></td>
                                             <td class="td-tarif">Durée : 1h</td>
                                             <td class="td-tarif">5€ / pers.</td>
                                         </tr>
@@ -156,7 +156,7 @@
         <div class="section-flex-row reveal-2">
             <!-- Bloc Salle -->
             <div class="block-3x-flex hidden-resp reveal-3" id="block-salle">
-                <img class="icon-theme-loc" src="/assets/img/icon/icon-theme/loc1.png" alt="icone location salle" width="110">
+                <img class="icon-theme-loc" src="<?= Path::getFile("/img/icon/icon-theme/loc1.png"); ?>" alt="icone location salle" width="110">
                 <h2 class="block-title reveal-2 block-title-theme"><span>Plusieurs espaces</span>de travail</h2>
                 <p class="block-text-main pb10">
                     Nous vous proposons plusieurs espaces disponibles selon vos besoins
@@ -170,7 +170,7 @@
                         </h3>
                         <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionLocation1">
                             <div class="accordion-body">
-                                <img src="/assets/img/img_carousel/location/slide1.jpg" class="block-location-accordion-img" alt="location collapse 1">
+                                <img src="<?= Path::getFile("/img/img_carousel/location/slide1.jpg"); ?>" class="block-location-accordion-img" alt="location collapse 1">
                                 <ul class="block-list-location reveal-3">
                                     <li>Environ 50m²</li>
                                     <li>Capacité 30 personnes</li>
@@ -187,7 +187,7 @@
                         </h3>
                         <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionLocation1">
                             <div class="accordion-body">
-                                <img src="/assets/img/img_carousel/location/slide2.jpg" class="block-location-accordion-img" alt="location collapse 2">
+                                <img src="<?= Path::getFile("/img/img_carousel/location/slide2.jpg"); ?>" class="block-location-accordion-img" alt="location collapse 2">
                                 <ul class="block-list-location reveal-3">
                                     <li>Environ 80m²</li>
                                     <li>Capacité 40 personnes</li>
@@ -205,7 +205,7 @@
                         </h3>
                         <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionLocation1">
                             <div class="accordion-body">
-                                <img src="/assets/img/img_carousel/location/slide6.jpg" class="block-location-accordion-img" alt="location collapse 3">
+                                <img src="<?= Path::getFile("/img/img_carousel/location/slide6.jpg"); ?>" class="block-location-accordion-img" alt="location collapse 3">
                                 <ul class="block-list-location reveal-3">
                                     <li>Environ 50m²</li>
                                     <li>Capacité 20 personnes</li>
@@ -219,7 +219,7 @@
             </div>
             <!-- Bloc Equipements -->
             <div class="block-3x-flex hidden-resp reveal-3" id="block-equip">
-                <img class="icon-theme-loc" src="/assets/img/icon/icon-theme/loc2.png" alt="icone équipement" width="110">
+                <img class="icon-theme-loc" src="<?= Path::getFile("/img/icon/icon-theme/loc2.png"); ?>" alt="icone équipement" width="110">
                 <h3 class="block-title reveal-2 block-title-theme"><span>Infrastructures</span>et équipements fournis</h3>
                 <p class="block-text-main pb10 reveal-3">
                     Vous trouverez ci-dessous les différents équipements compris dans notre offre de location
@@ -266,14 +266,14 @@
             </div>
             <!-- Bloc Question -->
             <div class="block-3x-flex reveal-3" id="block-question">
-                <img class="icon-theme-loc" src="/assets/img/icon/icon-theme/loc3.png" alt="icone question" width="110">
+                <img class="icon-theme-loc" src="<?= Path::getFile("/img/icon/icon-theme/loc3.png"); ?>" alt="icone question" width="110">
                 <h2 class="block-title reveal-2 block-title-theme"><span>Questions</span>ou une demande sur mesure ?</h2>
                 <p class="block-text-main block-text-responsive pb10 reveal-3">
                     Vous avec des questions ou vous souhaitez nous soumettre une demande sur mesure ? N'hésitez pas à nous contacter, nous mettrons tout en oeuvre pour répondre à vos attentes !
                 </p>
                 <div class="button-activity-90 mt10-resp">
-                    <a type="button" class="button-main reveal-4" href="/reservation">Réservez</a>
-                    <a type="button" class="button-secondary reveal-4" id="button-contact-location" href="/contact">Nous contacter</a>
+                    <a type="button" class="button-main reveal-4" href="<?= Path::getUrl("/reservation"); ?>">Réservez</a>
+                    <a type="button" class="button-secondary reveal-4" id="button-contact-location" href="<?= Path::getUrl("/contact"); ?>">Nous contacter</a>
                 </div>
             </div>
         </div>

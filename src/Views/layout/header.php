@@ -20,24 +20,24 @@
     <meta property="og:url" content="https://www.msvt.be">
     <meta property="og:updated_time" content="1691043200">
 
-    <link rel="icon" href="/assets/img/logo/favicon.png">
+    <link rel="icon" href="<?= Path::getFile("/img/logo/favicon.png"); ?>">
 
-    <link rel="preload" href="/assets/fonts/Lato/Lato-Bold.ttf" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="/assets/fonts/Lato/Lato-Regular.ttf" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="/assets/fonts/SourceSans/SourceSans3-Regular.ttf" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="/assets/fonts/SourceSans/SourceSans3-SemiBold.ttf" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="<?= Path::getFile("/fonts/Lato/Lato-Bold.ttf"); ?>" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="<?= Path::getFile("/fonts/Lato/Lato-Regular.ttf"); ?>" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="<?= Path::getFile("/fonts/SourceSans/SourceSans3-Regular.ttf"); ?>" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="<?= Path::getFile("/fonts/SourceSans/SourceSans3-SemiBold.ttf"); ?>" as="font" type="font/woff2" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
-    <link rel="stylesheet" href="/assets/style/cookiebanner.style.css">
-    <link rel="stylesheet" href="/assets/style/style.css">
+    <link rel="stylesheet" href="<?= Path::getFile("/style/cookiebanner.style.css"); ?>">
+    <link rel="stylesheet" href="<?= Path::getFile("/style/style.css"); ?>">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="/assets/js/reveal.js"></script>
-    <script src="/assets/js/nav-setting.js"></script>
+    <script src="<?= Path::getFile("/js/reveal.js"); ?>"></script>
+    <script src="<?= Path::getFile("/js/nav-setting.js"); ?>"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
 </head>

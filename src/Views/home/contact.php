@@ -5,7 +5,7 @@
         <div class="form-contact-flex" id="contact-form">
             <!-- Image -->
             <div class="block-img-contact">
-                <img src="/assets/img/img_contact/contact-img.jpg" class="hidden-resp" alt="img contact">
+                <img src="<?= Path::getFile("/img/img_contact/contact-img.jpg"); ?>" class="hidden-resp" alt="img contact">
             </div>
             <!-- Formulaire -->
             <form class="form-contact" action="/back-end/form_action_contact.php" method="POST" id="form-contact">
@@ -86,7 +86,7 @@
     </div>
     <!-- Bloc INFOS -->
     <div class="block-85 block-index-themes mt50 reveal-3 hidden-resp">
-        <img src="/assets/img/logo/logo_v2.1.png " alt="logo MSVT" width="180" id="contact-img">
+        <img src="<?= Path::getFile("/img/logo/logo_v2.1.png "); ?>" alt="logo MSVT" width="180" id="contact-img">
         <h3 class="block-title">ASBL "Maison des Sciences de la Vie et de la Terre"</h3>
         <p class="block-contact-details center">
             N° de compte : BE38 3701 1363 4072
@@ -97,7 +97,7 @@
         <p class="block-contact-details center">
             NE : 0476.039.673
         </p>
-        <a class="button-main mt20 reveal-4" href="/contact">Nous contacter</a>
+        <a class="button-main mt20 reveal-4" href="<?= Path::getUrl("/contact"); ?>">Nous contacter</a>
         <!-- 3 Blocs Infos  -->
         <div class="flex-table">
             <!-- Table infos -->

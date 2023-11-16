@@ -42,7 +42,7 @@
             <h2>Coordonnées</h2>
             <p class="mb25">
                 Si vous avez des questions concernant ces conditions d'utilisations, veuillez nous contacter à l'adresse suivante : info(at)msvt.be </p>
-            <a class="button-main mt20 reveal-4" href="/">Retour à la page d'accueil</a>
+            <a class="button-main mt20 reveal-4" href="<?= Path::getUrl("/"); ?>">Retour à la page d'accueil</a>
         </div>
     </div>
 </section>

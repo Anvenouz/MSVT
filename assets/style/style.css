@@ -1,24 +1,24 @@
 @font-face {
   font-family: "Lato";
-  src: url("/assets/fonts/Lato/Lato-Bold.ttf") format("truetype");
+  src: url("../fonts/Lato/Lato-Bold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Lato";
-  src: url("/assets/fonts/Lato/Lato-Regular.ttf") format("truetype");
+  src: url("../fonts/Lato/Lato-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "SourceSans3";
-  src: url("/assets/fonts/SourceSans/SourceSans3-SemiBold.ttf") format("truetype");
+  src: url("../fonts/SourceSans/SourceSans3-SemiBold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "SourceSans3";
-  src: url("/assets/fonts/SourceSans/SourceSans3-Regular.ttf") format("truetype");
+  src: url("../fonts/SourceSans/SourceSans3-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -211,7 +211,7 @@
 .footer-icon1::before {
   display: inline-block;
   content: "";
-  background: url(../assets/img/icon/icon-footer/footer-icon1.png) no-repeat 0 0;
+  background: url(../img/icon/icon-footer/footer-icon1.png) no-repeat 0 0;
   width: 20px;
   height: 20px;
   margin-right: 5px;
@@ -223,7 +223,7 @@
 .footer-icon2::before {
   display: inline-block;
   content: "";
-  background: url(../assets/img/icon/icon-footer/footer-icon2.png) no-repeat 0 0;
+  background: url(../img/icon/icon-footer/footer-icon2.png) no-repeat 0 0;
   width: 20px;
   height: 20px;
   margin-right: 5px;
@@ -235,7 +235,7 @@
 .footer-icon3::before {
   display: inline-block;
   content: "";
-  background: url(../assets/img/icon/icon-footer/footer-icon3.png) no-repeat 0 0;
+  background: url(../img/icon/icon-footer/footer-icon3.png) no-repeat 0 0;
   width: 20px;
   height: 20px;
   margin-right: 5px;
@@ -247,7 +247,7 @@
 .footer-icon4::before {
   display: inline-block;
   content: "";
-  background: url(../assets/img/icon/icon-footer/footer-icon4.png) no-repeat 0 0;
+  background: url(../img/icon/icon-footer/footer-icon4.png) no-repeat 0 0;
   width: 20px;
   height: 20px;
   margin-right: 5px;

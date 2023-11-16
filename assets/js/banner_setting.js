@@ -36,5 +36,5 @@ document.addEventListener("DOMContentLoaded", function () {
     const randomIndex = Math.floor(Math.random() * bannerImages.length);
     const bannerAd = document.getElementById("banner_ad");
 
-    bannerAd.src = "/assets/img/banner/" + bannerImages[randomIndex];
+    bannerAd.src = "./assets/img/banner/" + bannerImages[randomIndex];
 });

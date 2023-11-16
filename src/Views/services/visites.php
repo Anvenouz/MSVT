@@ -18,7 +18,7 @@
                 </p>
                 <!-- Vidéo -->
                 <div class="video">
-                    <video class="iframe-yt-visit" src="/vid/vid1.mp4" type="video/mp4" controls autoplay muted>
+                    <video class="iframe-yt-visit" src="<?= Path::getFile("/vid/vid1.mp4"); ?>" type="video/mp4" controls autoplay muted>
                     </video>
                 </div>
                 <!-- Boutons -->
@@ -47,7 +47,7 @@
                                         <tr>
                                             <td class="td-tarif strong">Dates</td>
                                             <td class="td-tarif">Samedis exclusivement<sup>
-                                                    <a href="javascript:;" data-toggle="tooltip" title='Voir "Dates 2024"'><img src="/assets/img/icon/question.png" width="12" alt="tooltip"></a></sup></td>
+                                                    <a href="javascript:;" data-toggle="tooltip" title='Voir "Dates 2024"'><img src="<?= Path::getFile("/img/icon/question.png"); ?>" width="12" alt="tooltip"></a></sup></td>
                                         </tr>
                                         <tr>
                                             <td class="td-tarif strong">Horaire</td>
@@ -56,7 +56,7 @@
                                         <tr>
                                             <td class="td-tarif strong">Départ</td>
                                             <td class="td-tarif">ASBL "Maison des Sciences de la vie et de la Terre"<sup>
-                                                    <a href="javascript:;" data-toggle="tooltip" title="Adresse : 31, Rue d'Empire - 7034 Obourg (Mons)"><img src="/assets/img/icon/question.png" width="12" alt="tooltip"></a></sup></td>
+                                                    <a href="javascript:;" data-toggle="tooltip" title="Adresse : 31, Rue d'Empire - 7034 Obourg (Mons)"><img src="<?= Path::getFile("/img/icon/question.png"); ?>" width="12" alt="tooltip"></a></sup></td>
                                         </tr>
                                         <tr>
                                             <td class="td-tarif strong" rowspan="3">Tarifs</td>
@@ -83,7 +83,7 @@
         <!-- Thèmes et dates DESKTOP -->
         <div class="section-flex-row hidden-resp reveal-2" id="visit-dates">
             <div class="block-3x-flex" id="block-bota">
-                <img class="icon-theme" src="/assets/img/icon/icon-theme/plant.png" alt="icone thème plante">
+                <img class="icon-theme" src="<?= Path::getFile("/img/icon/icon-theme/plant.png"); ?>" alt="icone thème plante">
                 <h2 class="block-title reveal-2 block-title-theme"><span>Botanique</span>Plantes sauvages comestibles</h2>
                 <p class="block-text-main align-left reveal-3">
                     Partez à la découverte de la biodiversité locale, en particulier de la flore exceptionnelle que ce site abrite. Notre guide vous emmènera dans les coins les plus reculés des anciennes carrières pour vous faire découvrir une grande variété de plantes sauvages comestibles et médicinales.
@@ -97,13 +97,13 @@
                     <li class="li-vis align-left">Toussaint (29 avril au 3 mai)</li>
                 </ul>
                 <div class="button-center">
-                    <a class="button-main d-block reveal-4" href="/reservation">
+                    <a class="button-main d-block reveal-4" href="<?= Path::getUrl("/reservation"); ?>">
                         Réserver
                     </a>
                 </div>
             </div>
             <div class="block-3x-flex" id="block-ornitho">
-                <img class="icon-theme" src="/assets/img/icon/icon-theme/bird.png" alt="iconee thème ornithologie">
+                <img class="icon-theme" src="<?= Path::getFile("/img/icon/icon-theme/bird.png"); ?>" alt="iconee thème ornithologie">
                 <h2 class="block-title reveal-2 block-title-theme"><span>Ornithologie</span>Observation des oiseaux</h2>
                 <p class="block-text-main align-left reveal-3">
                     Avec notre guide passionné, vous découvrirez les nombreux oiseaux qui peuplent ces lieux exceptionnels. Observez les espèces locales et migratrices dans leur habitat naturel et apprenez-en plus sur leur comportement et leurs habitudes.
@@ -117,13 +117,13 @@
                     <li class="li-vis align-left">Été semaine 2 (29 avril au 3 mai) </li>
                 </ul>
                 <div class="button-center">
-                    <a class="button-main d-block reveal-4" href="/reservation">
+                    <a class="button-main d-block reveal-4" href="<?= Path::getUrl("/reservation"); ?>">
                         Réserver
                     </a>
                 </div>
             </div>
             <div class="block-3x-flex" id="block-entomo">
-                <img class="icon-theme" src="/assets/img/icon/icon-theme/bug.png" alt="iconee thème insectes">
+                <img class="icon-theme" src="<?= Path::getFile("/img/icon/icon-theme/bug.png"); ?>" alt="iconee thème insectes">
                 <h2 class="block-title reveal-2 block-title-theme"><span>Entomologie</span>Découverte des insectes</h2>
                 <p class="block-text-main align-left reveal-3">
                     Découvrez le monde fascinant des insectes ! Notre guide vous emmènera dans les carrières pour vous faire découvrir la diversité incroyable des insectes qui y habitent. Vous apprendrez à identifier les différentes espèces et à comprendre leur rôle dans l'écosystème local.
@@ -136,7 +136,7 @@
                     <li class="li-vis align-left">Été semaine 2 (29 avril au 3 mai) </li>
                 </ul>
                 <div class="button-center">
-                    <a class="button-main d-block reveal-4" href="/reservation">
+                    <a class="button-main d-block reveal-4" href="<?= Path::getUrl("/reservation"); ?>">
                         Réserver
                     </a>
                 </div>
@@ -152,7 +152,7 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item resp-item-visit active">
-                    <img class="icon-theme" src="/assets/img/icon/icon-theme/plant.png" alt="icone thème plante">
+                    <img class="icon-theme" src="<?= Path::getFile("/img/icon/icon-theme/plant.png"); ?>" alt="icone thème plante">
                     <h2 class="block-title reveal-2 block-title-theme"><span>Botanique</span>Plantes sauvages comestibles</h2>
                     <p class="block-text-main hidden-resp reveal-3">
                         Partez à la découverte de la biodiversité locale, en particulier de la flore exceptionnelle que ce site abrite. Notre guide vous emmènera dans les coins les plus reculés des anciennes carrières pour vous faire découvrir une grande variété de plantes sauvages comestibles et médicinales.
@@ -166,11 +166,11 @@
                         <li class="li-vis align-left">Toussaint (29 avril au 3 mai)</li>
                     </ul>
                     <div class="button-activity-90">
-                        <a type="button" class="button-main" href="/reservation">Réserver</a>
+                        <a type="button" class="button-main" href="<?= Path::getUrl("/reservation"); ?>">Réserver</a>
                     </div>
                 </div>
                 <div class="carousel-item resp-item-visit">
-                    <img class="icon-theme" src="/assets/img/icon/icon-theme/bird.png" alt="icone thème ornithologie">
+                    <img class="icon-theme" src="<?= Path::getFile("/img/icon/icon-theme/bird.png"); ?>" alt="icone thème ornithologie">
                     <h2 class="block-title reveal-2 block-title-theme"><span>Ornithologie</span>Observation des oiseaux</h2>
                     <p class="block-text-main hidden-resp reveal-3">
                         Avec notre guide passionné, vous découvrirez les nombreux oiseaux qui peuplent ces lieux exceptionnels. Observez les espèces locales et migratrices dans leur habitat naturel et apprenez-en plus sur leur comportement et leurs habitudes.
@@ -184,13 +184,13 @@
                         <li class="li-vis align-left">Été semaine 2 (29 avril au 3 mai) </li>
                     </ul>
                     <div class="button-activity-90">
-                        <a class="button-main d-block reveal-4" href="/reservation">
+                        <a class="button-main d-block reveal-4" href="<?= Path::getUrl("/reservation"); ?>">
                             Réserver
                         </a>
                     </div>
                 </div>
                 <div class="carousel-item resp-item-visit">
-                    <img class="icon-theme" src="/assets/img/icon/icon-theme/bug.png" alt="icone thème insectes">
+                    <img class="icon-theme" src="<?= Path::getFile("/img/icon/icon-theme/bug.png"); ?>" alt="icone thème insectes">
                     <h2 class="block-title reveal-2 block-title-theme"><span>Entomologie</span>Découverte des insectes</h2>
                     <p class="block-text-main hidden-resp reveal-3">
                         Découvrez le monde fascinant des insectes ! Notre guide vous emmènera dans les carrières pour vous faire découvrir la diversité incroyable des insectes qui y habitent. Vous apprendrez à identifier les différentes espèces et à comprendre leur rôle dans l'écosystème local.
@@ -203,7 +203,7 @@
                         <li class="li-vis align-left">Été semaine 2 (29 avril au 3 mai) </li>
                     </ul>
                     <div class="button-activity-90">
-                        <a type="button" class="button-main" href="/reservation">Réserver</a>
+                        <a type="button" class="button-main" href="<?= Path::getUrl("/reservation"); ?>">Réserver</a>
                     </div>
                 </div>
             </div>

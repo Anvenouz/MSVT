@@ -102,57 +102,33 @@ function afficherImage() {
         var imageCN = document.getElementById('activite_image_stageCN');
         var imageVisite = document.getElementById('activite_image_visite');
 
+        //@todo I fix that, For all, you don't need to put copy past in each "case".
+        imageSco.style.display = 'block';
+        imageLoc.style.display = 'none';
+        imagePhoto.style.display = 'none';
+        imageCN.style.display = 'none';
+        imageVisite.style.display = 'none';
+
         switch (selectedValue) {
             case 'Activites scolaire (maternelles)':
             case 'Activites scolaire (primaires)':
             case 'Activites scolaire (secondaires)':
-                imageSco.src = './img/img_reservation/sco-app.jpg';
-                imageSco.style.display = 'block';
-                imageLoc.style.display = 'none';
-                imagePhoto.style.display = 'none';
-                imageCN.style.display = 'none';
-                imageVisite.style.display = 'none';
+                imageSco.src = './assets/img/img_reservation/sco-app.jpg';
                 break;
             case 'Service de location':
-                imageLoc.src = './img/img_reservation/loc-app.jpg';
-                imageLoc.style.display = 'block';
-                imageSco.style.display = 'none';
-                imagePhoto.style.display = 'none';
-                imageCN.style.display = 'none';
-                imageVisite.style.display = 'none';
+                imageLoc.src = './assets/img/img_reservation/loc-app.jpg';
                 break;
             case 'Visite guidee des carrieres':
-                imageVisite.src = './img/img_reservation/vis-app.jpg';
-                imageLoc.style.display = 'none';
-                imageSco.style.display = 'none';
-                imagePhoto.style.display = 'none';
-                imageCN.style.display = 'none';
-                imageVisite.style.display = 'block';
+                imageVisite.src = './assets/img/img_reservation/vis-app.jpg';
                 break;
             case 'Stages "Photo nature"':
-                imagePhoto.src = './img/img_reservation/photo-app.jpg';
-                imageCN.style.display = 'none';
-                imageVisite.style.display = 'none';
-                imageSco.style.display = 'none';
-                imageLoc.style.display = 'none';
-                imagePhoto.style.display = 'block';
+                imagePhoto.src = './assets/img/img_reservation/photo-app.jpg';
                 break;
             case 'Stages "Cirque et Nature"':
-                imageCN.src = './img/img_reservation/CN-app.jpg';
-                imageCN.style.display = 'block';
-                imageVisite.style.display = 'none';
-                imageSco.style.display = 'none';
-                imageLoc.style.display = 'none';
-                imagePhoto.style.display = 'none';
+                imageCN.src = './assets/img/img_reservation/CN-app.jpg';
                 break;
             case 'Anniversaires':
-                imageCN.src = './img/img_reservation/anniv-app.jpg';
-                imageCN.style.display = 'block';
-                imageVisite.style.display = 'none';
-                imageSco.style.display = 'none';
-                imageLoc.style.display = 'none';
-                imagePhoto.style.display = 'none';
-
+                imageCN.src = './assets/img/img_reservation/anniv-app.jpg';
                 break;
         }
     }
@@ -205,6 +181,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     //Boutons inside
     $(document).ready(function () {
+
+        // @todo make a for ! you don't need to copy past
+        // In your for you add "1mat etc.
+
         // Mat
         bindButtonClick('#boutonSuivant1mat', '#div1mat', '#div2mat');
         bindButtonClick('#boutonPrecedent2mat', '#div2mat', '#div1mat');

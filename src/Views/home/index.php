@@ -15,8 +15,8 @@
         <div class="carousel-inner">
             <!-- Slide 1 -->
             <div class="carousel-item active">
-                <img class="d-block w-100 carousel-header-img hidden-resp" src="/assets/img/img_background/index_header/slide1.jpg" alt="slide 1">
-                <img class="d-block w-100 carousel-header-img hidden-no-resp" src="/assets/img/img_background/index_header/slide1_resp.jpg" alt="slide 1">
+                <img class="d-block w-100 carousel-header-img hidden-resp" src="<?= Path::getFile("/img/img_background/index_header/slide1.jpg"); ?>" alt="slide 1">
+                <img class="d-block w-100 carousel-header-img hidden-no-resp" src="<?= Path::getFile("/img/img_background/index_header/slide1_resp.jpg"); ?>" alt="slide 1">
                 <p class="header-img-text">
                     <span class="span-hd1">Partez</span>
                     <span class="span-hd2">à</span>
@@ -25,15 +25,15 @@
                     <span class="span-hd5">des</span>
                     <span class="span-hd6">anciennes</span>
                     <span class="span-hd7">carrières d'Obourg</span>
-                    <a class="span-hd8 button-main button-header" href="/visites">
+                    <a class="span-hd8 button-main button-header" href="<?= Path::getUrl("/visites"); ?>">
                         En savoir plus
                     </a>
                 </p>
             </div>
             <!-- Slide 2 -->
             <div class="carousel-item">
-                <img class="d-block w-100 carousel-header-img hidden-resp" src="/assets/img/img_background/index_header/slide2.jpg" alt="slide 2">
-                <img class="d-block w-100 carousel-header-img hidden-no-resp" src="/assets/img/img_background/index_header/slide2_resp.jpg" alt="slide 2">
+                <img class="d-block w-100 carousel-header-img hidden-resp" src="<?= Path::getFile("/img/img_background/index_header/slide2.jpg"); ?>" alt="slide 2">
+                <img class="d-block w-100 carousel-header-img hidden-no-resp" src="<?= Path::getFile("/img/img_background/index_header/slide2_resp.jpg"); ?>" alt="slide 2">
                 <p class="header-img-text" id="header-img-text-scolaire">
                     <span class="span-hd1">Des activités</span>
                     <span class="span-hd2">scolaires</span>
@@ -43,15 +43,15 @@
                     <span class="span-hd5">et pour</span>
                     <span class="span-hd6">tous</span>
                     <span class="span-hd7">niveaux</span>
-                    <a class="span-hd8 button-main button-header" href="/activites_scolaires">
+                    <a class="span-hd8 button-main button-header" href="<?= Path::getUrl("/activites_scolaires"); ?>">
                         En savoir plus
                     </a>
                 </p>
             </div>
             <!-- Slide 3 -->
             <div class="carousel-item">
-                <img class="d-block w-100 carousel-header-img hidden-resp" src="/assets/img/img_background/index_header/slide4.jpg" alt="slide 3">
-                <img class="d-block w-100 carousel-header-img hidden-no-resp" src="/assets/img/img_background/index_header/slide4_resp.jpg" alt="slide 3">
+                <img class="d-block w-100 carousel-header-img hidden-resp" src="<?= Path::getFile("/img/img_background/index_header/slide4.jpg"); ?>" alt="slide 3">
+                <img class="d-block w-100 carousel-header-img hidden-no-resp" src="<?= Path::getFile("/img/img_background/index_header/slide4_resp.jpg"); ?>" alt="slide 3">
                 <p class="header-img-text" id="header-img-text-visit">
                     <span class="span-hd1 hidden-no-resp">Venez découvrir</span>
                     <span class="span-hd1 hidden-resp">Une</span>
@@ -62,15 +62,15 @@
                     <span class="span-hd5">une</span>
                     <span class="span-hd6">biodiversité</span>
                     <span class="span-hd7">unique</span>
-                    <a class="span-hd8 button-main button-header" href="/visites">
+                    <a class="span-hd8 button-main button-header" href="<?= Path::getUrl("/visites"); ?>">
                         En savoir plus
                     </a>
                 </p>
             </div>
             <!-- Slide 4 -->
             <div class="carousel-item">
-                <img class="d-block w-100 carousel-header-img hidden-resp" src="/assets/img/img_background/index_header/slide6.jpg" alt="slide 4">
-                <img class="d-block w-100 carousel-header-img hidden-no-resp" src="/assets/img/img_background/index_header/slide6_resp.jpg" alt="slide 4">
+                <img class="d-block w-100 carousel-header-img hidden-resp" src="<?= Path::getFile("/img/img_background/index_header/slide6.jpg"); ?>" alt="slide 4">
+                <img class="d-block w-100 carousel-header-img hidden-no-resp" src="<?= Path::getFile("/img/img_background/index_header/slide6_resp.jpg"); ?>" alt="slide 4">
                 <p class="header-img-text">
                     <span class="span-hd1">Organisation</span>
                     <span class="span-hd2">d'anniversaires</span>
@@ -78,15 +78,15 @@
                     <span class="span-hd4">enfants</span>
                     <span class="span-hd5">de 6 à</span>
                     <span class="span-hd6">12 ans</span>
-                    <a class="span-hd7 button-main button-header" href="/anniversaires">
+                    <a class="span-hd7 button-main button-header" href="<?= Path::getUrl("/anniversaires"); ?>">
                         En savoir plus
                     </a>
                 </p>
             </div>
             <!-- Slide 5 -->
             <div class="carousel-item">
-                <img class="d-block w-100 carousel-header-img hidden-resp" src="/assets/img/img_background/index_header/slide3.jpg" alt="slide 5">
-                <img class="d-block w-100 carousel-header-img hidden-no-resp" src="/assets/img/img_background/index_header/slide3_resp.jpg" alt="slide 5">
+                <img class="d-block w-100 carousel-header-img hidden-resp" src="<?= Path::getFile("/img/img_background/index_header/slide3.jpg"); ?>" alt="slide 5">
+                <img class="d-block w-100 carousel-header-img hidden-no-resp" src="<?= Path::getFile("/img/img_background/index_header/slide3_resp.jpg"); ?>" alt="slide 5">
                 <p class="header-img-text" id="header-img-text-stageCN">
                     <span class="span-hd1">Découvrez</span>
                     <span class="span-hd2">nos</span>
@@ -95,15 +95,15 @@
                     <span class="span-hd5">"Cirque</span>
                     <span class="span-hd6">et</span>
                     <span class="span-hd7">Nature"</span>
-                    <a class="span-hd8 button-main button-header" href="/stages_CN">
+                    <a class="span-hd8 button-main button-header" href="<?= Path::getUrl("/stages_CN"); ?>">
                         En savoir plus
                     </a>
                 </p>
             </div>
             <!-- Slide 6 -->
             <div class="carousel-item">
-                <img class="d-block w-100 carousel-header-img hidden-resp" src="/assets/img/img_background/index_header/slide5.jpg" alt="slide 6">
-                <img class="d-block w-100 carousel-header-img hidden-no-resp" src="/assets/img/img_background/index_header/slide5_resp.jpg" alt="slide 6">
+                <img class="d-block w-100 carousel-header-img hidden-resp" src="<?= Path::getFile("/img/img_background/index_header/slide5.jpg"); ?>" alt="slide 6">
+                <img class="d-block w-100 carousel-header-img hidden-no-resp" src="<?= Path::getFile("/img/img_background/index_header/slide5_resp.jpg"); ?>" alt="slide 6">
                 <p class="header-img-text">
                     <span class="span-hd1">Capturez</span>
                     <span class="span-hd2">la beauté</span>
@@ -119,8 +119,8 @@
             </div>
             <!-- Slide 7 -->
             <div class="carousel-item">
-                <img class="d-block w-100 carousel-header-img hidden-resp" src="/assets/img/img_background/index_header/slide7.jpg" alt="slide 7">
-                <img class="d-block w-100 carousel-header-img hidden-no-resp" src="/assets/img/img_background/index_header/slide7_resp.jpg" alt="slide 7">
+                <img class="d-block w-100 carousel-header-img hidden-resp" src="<?= Path::getFile("/img/img_background/index_header/slide7.jpg"); ?>" alt="slide 7">
+                <img class="d-block w-100 carousel-header-img hidden-no-resp" src="<?= Path::getFile("/img/img_background/index_header/slide7_resp.jpg"); ?>" alt="slide 7">
 
                 <p class="header-img-text margin-modified">
                     <span class="span-hd1">Visite</span>
@@ -130,20 +130,20 @@
                     <span class="span-hd5">pour les</span>
                     <span class="span-hd6">élèves</span>
                     <span class="span-hd7">du secondaires</span>
-                    <a class="span-hd8 button-main button-header hidden-resp" href="/activites_scolaires.php#section-usine">
+                    <a class="span-hd8 button-main button-header hidden-resp" href="<?= Path::getUrl("/activites_scolaires#section-usine"); ?>">
                         En savoir plus
                     </a>
-                    <a class="span-hd8 button-main button-header hidden-no-resp" href="/activites_scolaires">
+                    <a class="span-hd8 button-main button-header hidden-no-resp" href="<?= Path::getUrl("/activites_scolaires"); ?>">
                         En savoir plus
                     </a>
                 </p>
             </div>
-            <!-- Boutons précédent -->
+
             <button class="carousel-control-prev control-header" type="button" data-bs-target="#carouselHeader" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Précedent</span>
             </button>
-            <!-- Boutons suivant -->
+
             <button class="carousel-control-next control-header" type="button" data-bs-target="#carouselHeader" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Suivant</span>
@@ -163,7 +163,7 @@
                 <div class="carousel-inner">
                     <?php for ($i = 1; $i < 7; $i++) : ?>
                         <div class="carousel-item<?= ($i === 1) ? ' active' : '' ?>">
-                            <img class="d-block w-100" src="/assets/img/img_carousel/scolaire/slide<?= $i ?>.jpg" alt="slide <?= $i ?>">
+                            <img class="d-block w-100" src="<?= Path::getFile("/img/img_carousel/scolaire/slide$i.jpg"); ?>" alt="slide <?= $i ?>">
                         </div>
                     <?php endfor; ?>
                 </div>
@@ -181,7 +181,7 @@
                 <li>Plusieurs formules disponibles et horaires flexibles</li>
                 <li>Réfectoire disponible ou espace extérieur à disposition pour la pause de midi</li>
             </ul>
-            <a class="button-main button-resp-100 button-flex-row" href="/activites_scolaires">
+            <a class="button-main button-resp-100 button-flex-row" href="<?= Path::getUrl("/activites_scolaires"); ?>">
                 En savoir plus
             </a>
         </div>
@@ -195,7 +195,7 @@
             <!-- Titre -->
             <h1 class="block-title" id="visit-title"><span>Explorez les anciennes carrières</span> avec nos visites guidées thématiques</h1>
             <!-- Video resp -->
-            <video class="iframe-yt-index hidden-no-resp" src="vid/vid1.mp4" type="video/mp4" controls autoplay muted loop>
+            <video class="iframe-yt-index hidden-no-resp" src="<?= Path::getFile("/vid/vid1.mp4"); ?>" type="video/mp4" controls autoplay muted loop>
             </video>
             <!-- Texte -->
             <p>
@@ -205,7 +205,7 @@
                 Nos visites thématiques vous permettront de découvrir l'histoire des anciennes carrières, de leur exploitation jusqu'à leur réhabilitation. Une expérience inoubliable à vivre en famille ou entre amis !
             </p>
             <!-- Boutons -->
-            <a class="button-main button-resp-100" href="/visites">En savoir plus</a>
+            <a class="button-main button-resp-100" href="<?= Path::getUrl("/visites"); ?>">En savoir plus</a>
             <!-- Thèmes -->
             <div class="accordion accordion-fluid hidden-resp" id="accordion-visit">
                 <?php
@@ -243,7 +243,7 @@
                 <?php endfor; ?>
             </div>
             <!-- Video no resp -->
-            <video class="iframe-yt-index hidden-resp" src="vid/vid1.mp4" type="video/mp4" controls autoplay muted loop>
+            <video class="iframe-yt-index hidden-resp" src="<?= Path::getFile("/vid/vid1.mp4"); ?>" type="video/mp4" controls autoplay muted loop>
             </video>
         </div>
     </div>
@@ -259,8 +259,8 @@
                 <div class="carousel-inner">
                     <?php
                     for ($i = 1; $i < 10; $i++) {
-                        $activeClass = ($i === 1) ? 'active' : '';
-                        echo '<div class="carousel-item ' . $activeClass . '"><img class="d-block w-100" src="/assets/img/img_carousel/stage_cn/slide' . $i . '.jpg" alt="slide ' . $i . '"></div>';
+                      $activeClass = ($i === 1) ? 'active' : '';
+                      echo '<div class="carousel-item ' . $activeClass . '"><img class="d-block w-100" src="' . Path::getFile("/img/img_carousel/stage_cn/slide$i.jpg") . '" alt="slide ' . $i . '"></div>';
                     }
                     ?>
                 </div>
@@ -275,7 +275,7 @@
             <p class="block-text-justify">
                 Les enfants auront l'occasion de développer leur créativité, de pratiquer différentes disciplines de cirque et de découvrir la nature grâce à des activités amusantes, éducatives et artistiques.
             </p>
-            <a class="button-main button-resp-100 button-flex-row" href="/stages_CN">
+            <a class="button-main button-resp-100 button-flex-row" href="<?= Path::getUrl("/stages_CN"); ?>">
                 En savoir plus
             </a>
         </div>
@@ -286,7 +286,7 @@
                     <?php
                     for ($i = 1; $i < 10; $i++) {
                         $activeClass = ($i === 1) ? 'active' : '';
-                        echo '<div class="carousel-item ' . $activeClass . '"><img class="d-block w-100" src="/assets/img/img_carousel/stage_cn/slide' . $i . '.jpg" alt="slide ' . $i . '"></div>';
+                        echo '<div class="carousel-item ' . $activeClass . '"><img class="d-block w-100" src="'.Path::getFile("/img/img_carousel/stage_cn/slide$i.jpg") .'" alt="slide ' . $i . '"></div>';
                     }
                     ?>
                 </div>
@@ -310,7 +310,7 @@
                     for ($i = 1; $i < 9; $i++) {
                         $activeClass = ($i === 1) ? 'active' : '';
                         echo '<div class="carousel-item ' . $activeClass . '">
-                            <img class="d-block w-100" src="/assets/img/img_carousel/stage_photo/slide' . $i . '.jpg" alt="slide ' . $i . '">
+                            <img class="d-block w-100" src="'. Path::getFile("/img/img_carousel/stage_photo/slide$i.jpg") .'" alt="slide ' . $i . '">
                         </div>';
                     }
                     ?>
@@ -339,7 +339,7 @@
             <h1 class="block-title hidden-no-resp align-left-resp" id="anniv-title"><span>Fêtez l'anniversaire de votre enfant</span>au coeur des anciennes carrières !</h1>
             <div class="block-flex-img block-flex-img-anniv reveal-3">
                 <!-- IMG 1 -->
-                <img class="anniv-img zoom-image reveal-4" id="anniv-img1-index" src="/assets/img/img_anniv/anniv2.jpg" width="260" alt="img anniversaire2 index">
+                <img class="anniv-img zoom-image reveal-4" id="anniv-img1-index" src="<?= Path::getFile("/img/img_anniv/anniv2.jpg"); ?>" width="260" alt="img anniversaire2 index">
             </div>
             <div class="block-text-70 pb50">
                 <!-- Texte -->
@@ -350,12 +350,12 @@
                 <p class="block-text-main mb25">
                     Nous nous occupons de tout (activités, gateau, boissons) pour rendre cette journée extraordinaire pour votre enfant !
                 </p>
-                <a class="button-main button-resp-100" href="/anniversaires">
+                <a class="button-main button-resp-100" href="<?= Path::getUrl("/anniversaires"); ?>">
                     En savoir plus
                 </a>
             </div>
             <!-- IMG 2 -->
-            <img class="anniv-img reveal-3" id="anniv-img2" src="/assets/img/img_anniv/anniv1.jpg" alt="img anniversaire1 index">
+            <img class="anniv-img reveal-3" id="anniv-img2" src="<?= Path::getFile("/img/img_anniv/anniv1.jpg"); ?>" alt="img anniversaire1 index">
         </div>
     </div>
 </section>
@@ -371,7 +371,7 @@
                     <?php
                     $activeClass = 'active';
                     for ($i = 1; $i < 8; $i++) {
-                        echo '<div class="carousel-item ' . $activeClass . '"><img class="d-block w-100" src="/assets/img/img_carousel/location/slide' . $i . '.jpg" alt="slide ' . $i . ' location"></div>';
+                        echo '<div class="carousel-item ' . $activeClass . '"><img class="d-block w-100" src=" '. Path::getFile("/img/img_carousel/location/slide$i.jpg").'" alt="slide ' . $i . ' location"></div>';
                         $activeClass = '';
                     }
                     ?>
@@ -387,7 +387,7 @@
             <p class="block-text-justify">
                 Nos locaux sont équipés de toutes les commodités nécessaires pour mener à bien vos réunions ou vos séminaires. N'hésitez pas à nous contacter pour découvrir nos différentes offres.
             </p>
-            <a class="button-main button-resp-100 button-flex-row" href="/location">
+            <a class="button-main button-resp-100 button-flex-row" href="<?= Path::getUrl("/location"); ?>">
                 En savoir plus
             </a>
         </div>
@@ -398,7 +398,7 @@
                     <?php
                     $activeClass = 'active';
                     for ($i = 1; $i < 8; $i++) {
-                        echo '<div class="carousel-item ' . $activeClass . '"><img class="d-block w-100" src="/assets/img/img_carousel/location/slide' . $i . '.jpg" alt="slide ' . $i . ' location"></div>';
+                        echo '<div class="carousel-item ' . $activeClass . '"><img class="d-block w-100" src="'.Path::getFile("/img/img_carousel/location/slide$i.jpg").'" alt="slide ' . $i . ' location"></div>';
                         $activeClass = '';
                     }
                     ?>
@@ -417,7 +417,7 @@
         <h1 class="block-title hidden-no-resp"><span>Notre ASBL</span>son histoire et ses objectifs</h1>
         <!-- Image -->
         <div class="frame-effect-lt reveal-2">
-            <img src="/assets/img/img_historique/batiment.jpg" class="historique-img" alt="img historique">
+            <img src="<?= Path::getFile("/img/img_historique/batiment.jpg"); ?>" class="historique-img" alt="img historique">
         </div>
         <!-- Texte -->
         <div class="mr90 reveal-1">
@@ -427,7 +427,7 @@
             </p>
             <p class="block-text-justify">
                 Depuis plus de 15 ans, notre objectif principal est de sensibiliser un large public à l'environnement, à la nature et à la préservation de la biodiversité. </p>
-            <a class="button-main button-resp-100 mb reveal-4" href="/historique" style="margin-top: 19px;">
+            <a class="button-main button-resp-100 mb reveal-4" href="<?= Path::getUrl("/historique"); ?>" style="margin-top: 19px;">
                 En savoir plus
             </a>
         </div>
@@ -448,10 +448,10 @@
 <!-- //SCRIPT -->
 
 <!-- Apparition IMG bannière -->
-<script src="/assets/js/banner_setting.js"></script>
+<script src="<?= Path::getFile("/js/banner_setting.js"); ?>"></script>
 
 <!-- Cookies  -->
-<script src="/assets/js/cookiebanner.script.js"></script>
+<script src="<?= Path::getFile("/js/cookiebanner.script.js"); ?>"></script>
 <script>
     $(document).ready(function() {
         cookieBanner.init();

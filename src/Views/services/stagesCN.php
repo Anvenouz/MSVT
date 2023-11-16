@@ -2,7 +2,7 @@
     <div class="block-90 reveal">
         <div class="section-flex-center reveal-2">
             <div class="block-flex-img block-flex-img-CN reveal-3">
-                <img class="CN-img zoom-image hidden-resp" id="CN-img1" src="/assets/img/img_stage_CN/CN1.jpg" alt="Image cirque">
+                <img class="CN-img zoom-image hidden-resp" id="CN-img1" src="<?= Path::getFile("/img/img_stage_CN/CN1.jpg"); ?>" alt="Image cirque">
             </div>
             <div class="block-text-70 reveal-3">
                 <h1 class="block-title" id="CN-title"><span>Découvrez nos stages</span>Cirqu'et Nature pour les enfants de 8 à 12 ans</h1>
@@ -74,13 +74,13 @@
                 <div id="carouselCN" class="carousel frame-effect-rt slide carousel-max carousel-fade reveal-2" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img class="d-block w-100" src="/assets/img/img_stage_CN/CNc1.jpg" alt="First slide">
+                            <img class="d-block w-100" src="<?= Path::getFile("/img/img_stage_CN/CNc1.jpg"); ?>" alt="First slide">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="/assets/img/img_stage_CN/CNc2.jpg" alt="First slide">
+                            <img class="d-block w-100" src="<?= Path::getFile("/img/img_stage_CN/CNc2.jpg"); ?>" alt="First slide">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="/assets/img/img_stage_CN/CNc3.jpg" alt="First slide">
+                            <img class="d-block w-100" src="<?= Path::getFile("/img/img_stage_CN/CNc3.jpg"); ?>" alt="First slide">
                         </div>
                     </div>
                 </div>
@@ -100,13 +100,13 @@
             <div id="carouselCN" class="carousel frame-effect-rt slide carousel-max carousel-fade reveal-2" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img class="d-block w-100" src="/assets/img/img_stage_CN/CNc1.jpg" alt="First slide">
+                        <img class="d-block w-100" src="<?= Path::getFile("/img/img_stage_CN/CNc1.jpg"); ?>" alt="First slide">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="/assets/img/img_stage_CN/CNc2.jpg" alt="First slide">
+                        <img class="d-block w-100" src="<?= Path::getFile("/img/img_stage_CN/CNc2.jpg"); ?>" alt="First slide">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="/assets/img/img_stage_CN/CNc3.jpg" alt="First slide">
+                        <img class="d-block w-100" src="<?= Path::getFile("/img/img_stage_CN/CNc3.jpg"); ?>" alt="First slide">
                     </div>
                 </div>
             </div>
@@ -121,11 +121,11 @@
         <div class="carousel frame-effect-lt hidden-resp slide carousel-fade carousel-max reveal-2" id="carousel-nature" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="d-block w-100" src="/assets/img/img_stage_CN/CNn1.jpg" alt="slide 1">
+                    <img class="d-block w-100" src="<?= Path::getFile("/img/img_stage_CN/CNn1.jpg"); ?>" alt="slide 1">
                 </div>
                 <?php
                 for ($i = 2; $i < 7; $i++) {
-                    echo '<div class="carousel-item"><img class="d-block w-100" src="/assets/img/img_stage_CN/CNn' . $i . '.jpg" alt="slide ' . $i . '">
+                    echo '<div class="carousel-item"><img class="d-block w-100" src="'.Path::getFile("/img/img_stage_CN/CNn$i.jpg").'" alt="slide ' . $i . '">
                             </div>';
                 }
                 ?>
@@ -136,11 +136,11 @@
             <div class="carousel frame-effect-lt hidden-no-resp slide carousel-fade carousel-max reveal-2" id="carousel-nature" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img class="d-block w-100" src="/assets/img/img_stage_CN/CNn1.jpg" alt="slide 1">
+                        <img class="d-block w-100" src="<?= Path::getFile("/img/img_stage_CN/CNn1.jpg"); ?>" alt="slide 1">
                     </div>
                     <?php
                     for ($i = 2; $i < 7; $i++) {
-                        echo '<div class="carousel-item"><img class="d-block w-100" src="/assets/img/img_stage_CN/CNn' . $i . '.jpg" alt="slide ' . $i . '">
+                        echo '<div class="carousel-item"><img class="d-block w-100" src=" '. Path::getFile("/img/img_stage_CN/CNn$i.jpg").'" alt="slide $i">
                             </div>';
                     }
                     ?>
@@ -179,14 +179,14 @@
                     <li class="li-CN align-left">Toussaint (29 avril au 3 mai)</li>
                 </ul>
                 <div class="button-center">
-                    <a class="button-main d-block reveal-4" href="/reservation">
+                    <a class="button-main d-block reveal-4" href="<?= Path::getUrl("/reservation"); ?>">
                         Réserver
                     </a>
                 </div>
             </div>
             <div class="block-flex-CN-item" id="flyer-CN">
                 <h3 class="block-title mb20 ">Prochain stage</h3>
-                <img class="img-flyer-CN" src="/assets/img/img_stage_CN/flyer/ete_2023.jpg" alt="flyer stage img">
+                <img class="img-flyer-CN" src="<?= Path::getFile("/img/img_stage_CN/flyer/ete_2023.jpg"); ?>" alt="flyer stage img">
             </div>
         </div>
 
@@ -203,13 +203,13 @@
                         <li class="li-CN align-left">Toussaint (29 avril au 3 mai)</li>
                     </ul>
                     <div class="button-center">
-                        <a class="button-main d-block reveal-4" href="/reservation">
+                        <a class="button-main d-block reveal-4" href="<?= Path::getUrl("/reservation"); ?>">
                             Réserver
                         </a>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="/assets/img/img_stage_CN/flyer/ete_2023.jpg" width="180" alt="flyer stage img">
+                    <img class="d-block w-100" src="<?= Path::getFile("/img/img_stage_CN/flyer/ete_2023.jpg"); ?>" width="180" alt="flyer stage img">
                 </div>
             </div>
         </div>
